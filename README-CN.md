@@ -41,7 +41,7 @@
 pod “mopub-ios-sdk”
 pod “PlayableAds”
 ```
-![依赖](imgs/007.tif)
+![依赖](imgs/007.TIF)
 
 #### 2.2 在终端命令里面执行pod install
 ![依赖](imgs/008.png)
