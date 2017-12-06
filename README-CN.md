@@ -53,30 +53,31 @@ pod “PlayableAds”
 ## 3. 将以下文件添加到工程里面
 
 MPPlayableAdMobRewardedVideoCustomEvent.h
+
 MPPlayableAdMobRewardedVideoCustomEvent.m
 
 ![依赖](imgs/010.png)
 
 ## 4. 在MoPub平台为可玩广告配置广告位
 #### 4.1 为可玩广告新建广告位
-- a. 进入应用，点击“new add unit”按钮
+- 进入应用，点击“new add unit”按钮
 
 ![new add unit](imgs/011.png)
 
-- b. 创建广告位，请注意format应该为Rewarded video，点击“save”按钮
+- 创建广告位，请注意format应该为Rewarded video，点击“save”按钮
 
 ![Rewarded video](imgs/012.png) 
 
-- c. 获取新创建广告位的ad unit ID
+- 获取新创建广告位的ad unit ID
 
 ![创建广告位](imgs/013.png)
 
 #### 4.2 获取已有广告位的ID
-- a. 选择应用，进入广告位列表，选择要接入的广告位，点击进入。点击“edit ad unit”按钮，点击“view code integration”按钮
+- 选择应用，进入广告位列表，选择要接入的广告位，点击进入。点击“edit ad unit”按钮，点击“view code integration”按钮
 
-![view code integration](imgs014.png)
+![view code integration](imgs/014.png)
 
-- b. 获取广告位的ad unit ID
+- 获取广告位的ad unit ID
 
 ![获取广告位](imgs/015.png)
 
@@ -85,18 +86,18 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 ![add a network](imgs/016.png)
 
 #### 5.2 点击“custom native network“链接
-![custom native network](imgs/0178.png)
+![custom native network](imgs/017.png)
 
 #### 5.3 添加可玩广告平台名称为ZPLAY Ads，并且在步骤3中申请的广告位中配置可玩广告（图示2和图示3）。
 
 ![配置](imgs/018.png)
 
-- a. 请在图示2的位置添加如下信息：
+- 请在图示2的位置添加如下信息：
 ```
 MPPlayableAdMobRewardedVideoCustomEvent
 ```
 
-- b. 请在图示3的位置添加在可玩广告平台申请的广告位信息，格式如下：
+- 请在图示3的位置添加在可玩广告平台申请的广告位信息，格式如下：
 ```
 {
 	"APPID": "iOSDemoApp",
@@ -124,12 +125,12 @@ MPPlayableAdMobRewardedVideoCustomEvent
 
 ![配置信息](imgs/022.png)
 
-图示1：导入MoPub需要的文件
-图示2：添加MoPub广告回调的声明
-图示3：初始化MoPub SDK
-图示4：请求广告，请正确填入在MoPub平台申请的广告位ID（详见第4步）
-图示5：展示广告，请正确填入在MoPub平台申请的广告位ID（详见第4步）
-图示6：添加MoPub广告回调接口
+- 图示1：导入MoPub需要的文件
+- 图示2：添加MoPub广告回调的声明
+- 图示3：初始化MoPub SDK
+- 图示4：请求广告，请正确填入在MoPub平台申请的广告位ID（详见第4步）
+- 图示5：展示广告，请正确填入在MoPub平台申请的广告位ID（详见第4步）
+- 图示6：添加MoPub广告回调接口
 
 ## 9. 调试
 执行步骤8中图示4的方法，请求广告，查看log
