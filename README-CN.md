@@ -85,7 +85,7 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 ![add a network](imgs/016.png)
 
 #### 5.2 点击“custom native network“链接
-![custom native network](imgs/0178.png)
+![custom native network](imgs/017.png)
 
 #### 5.3 添加可玩广告平台名称为ZPLAY Ads，并且在步骤3中申请的广告位中配置可玩广告（图示2和图示3）。
 
