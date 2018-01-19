@@ -32,6 +32,12 @@
 #### 1.6在广告位管理列表页，获取广告位的ID
 ![获取广告位](imgs/006.png)
 
+注：您在测试中可使用如下id进行测试，测试id不会产生收益，应用上线时请使用您申请的正式id。
+
+|操作系统|  App_ID  |  Ad_Unit_id|
+|--------|----------|------------|
+|iOS|A650AB0D-7BFC-2A81-3066-D3170947C3DA|BAE5DAAC-04A2-2591-D5B0-38FA846E45E7|
+
 ## 2. 添加MoPub SDK和PlayableAds SDK，步骤如下：
 
 了解如何使用[Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
