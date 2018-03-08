@@ -12,6 +12,7 @@
 @interface ViewController () <MPRewardedVideoDelegate>
 
 @property (nonatomic) MPRewardedVideo *mpRewardedVideo;
+@property (weak, nonatomic) IBOutlet UILabel *mLog;
 
 @end
 
@@ -30,6 +31,9 @@
 }
 
 - (IBAction)requestAd:(UIButton *)sender {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    _mLog.text = @"";
+    [self addLog:@"requestAd..."];
     [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:@"cd7acdd3f1cf43999bb244d2890f9817"
                                withMediationSettings:nil];
 }
@@ -40,14 +44,20 @@
 }
 
 - (void)rewardedVideoAdDidLoadForAdUnitID:(NSString *)adUnitID {
-    NSLog(@"=== rewardedVideoAdDidLoadForAdUnitID");
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    [self addLog:@"rewardedVideoAdDidLoadForAdUnitID"];
 }
 
 - (void)rewardedVideoAdDidFailToLoadForAdUnitID:(NSString *)adUnitID error:(NSError *)error {
-    NSLog(@"=== rewardedVideoAdDidFailToLoadForAdUnitID %@", error);
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    [self addLog:@"rewardedVideoAdDidFailToLoadForAdUnitID"];
 }
 
 - (void)rewardedVideoAdDidExpireForAdUnitID:(NSString *)adUnitID {
-    NSLog(@"=== rewardedVideoAdDidExpireForAdUnitID");
+    [self addLog:@"rewardedVideoAdDidExpireForAdUnitID"];
+}
+
+- (void)addLog:(NSString*)msg {
+    _mLog.text = [_mLog.text stringByAppendingFormat:@"\n%@", msg];
 }
 @end

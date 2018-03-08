@@ -31,9 +31,8 @@
 - (void)requestRewardedVideoWithCustomEventInfo:(NSDictionary *)info {
     self.appId =  [info objectForKey:@"APPID"];
     self.adUnitId = [info objectForKey:@"AdUnitId"];
-    self.pAds = [[PlayableAds alloc] initWithAdUnitID:self.adUnitId
-                                                appID:self.appId
-                                   rootViewController:nil];
+    self.pAds = [[PlayableAds alloc] initWithAdUnitID:self.adUnitId appID:self.appId];
+    self.pAds.autoLoad = NO;
     self.pAds.delegate = self;
     [self.pAds loadAd];
 }

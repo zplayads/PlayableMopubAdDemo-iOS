@@ -6,7 +6,7 @@ target 'PlayableMopubAd' do
   # use_frameworks!
 
   # Pods for PlayableMopubAd
-  pod 'PlayableAds'
+  pod 'PlayableAds', '2.0.2'
   pod 'mopub-ios-sdk'
 
   target 'PlayableMopubAdTests' do
