@@ -27,7 +27,7 @@
 ![创建广告位](imgs/004.png)
 
 #### 1.5 Fill in adunit information, and click *ADD* button, then go back to AdUnit Management
-![添加](imgs/005.png
+![添加](imgs/005.png)
 
 #### 1.6 Obtain your adunit ID in AdUnit Management page
 ![获取广告位](imgs/006.png)
