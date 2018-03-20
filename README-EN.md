@@ -15,22 +15,22 @@
 
 ## 1. Apply for app ID and ad unit ID on ZPLAY Ads platform
 #### 1.1 Click *ADD NEW APP* button in Application Management page
-![“应用管理”页面](imgs/001.png)
+![“应用管理”页面](imgs/024.png)
 
 #### 1.2 Fill in app information, and click *ADD* button, then go back to Application Management
-![添加](imgs/002.png)
+![添加](imgs/025.png)
 
 #### 1.3 Obtain your app ID in Application Management page
-![应用管理列表页](imgs/003.png)
+![应用管理列表页](imgs/026.png)
 
 #### 1.4 Click *Add New AdUnit* button in app list, or you are also available to do this in AdUnit Management page
-![创建广告位](imgs/004.png)
+![创建广告位](imgs/027.png)
 
 #### 1.5 Fill in adunit information, and click *ADD* button, then go back to AdUnit Management
-![添加](imgs/005.png)
+![添加](imgs/028.png)
 
 #### 1.6 Obtain your adunit ID in AdUnit Management page
-![获取广告位](imgs/006.png)
+![获取广告位](imgs/029.png)
 
 Note: You are available to use the following ID when testing(not charge). Please switch to the ID you applied in production mode.
 
