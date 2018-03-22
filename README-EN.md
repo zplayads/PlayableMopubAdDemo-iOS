@@ -45,7 +45,7 @@ How to use [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 #### 2.1 Add dependencies in Podfile file
 ```
 pod “mopub-ios-sdk”
-pod “PlayableAds”, "~>2.0.2"
+pod “PlayableAds”, "~>2.0.5"
 ```
 ![依赖](imgs/007.png)
 
