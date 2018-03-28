@@ -1,7 +1,7 @@
 
 ## Directory
 1. Apply for app ID and ad unit ID on ZPLAY Ads platform
-2. Add Mopub SDK and PlayableAds SDK
+2. Add Mopub SDK and ZPLAY Ads SDK
 3. Add the following files into project
 4. Set ad unit for ZPLAY Ads on MoPub
 5. Add ZPLAY Ads as a new network on MoPub
@@ -34,11 +34,12 @@
 
 Note: You are available to use the following ID when testing(not charge). Please switch to the ID you applied in production mode.
 
-|OS|  App_ID  |  Ad_Unit_id|
-|--------|----------|------------|
-|iOS|A650AB0D-7BFC-2A81-3066-D3170947C3DA|BAE5DAAC-04A2-2591-D5B0-38FA846E45E7|
+|OS|Ad Type|  App_ID  |  Ad_Unit_id|
+|--------|--|----------|------------|
+|iOS|Reward Video|A650AB0D-7BFC-2A81-3066-D3170947C3DA|BAE5DAAC-04A2-2591-D5B0-38FA846E45E7|
+|iOS|Interstitial|A650AB0D-7BFC-2A81-3066-D3170947C3DA|0868EBC0-7768-40CA-4226-F9924221C8EB|
 
-## 2. Add Mopub SDK and PlayableAds SDK as below:
+## 2. Add Mopub SDK and ZPLAY Ads SDK as below:
 
 How to use [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
@@ -55,6 +56,8 @@ pod “PlayableAds”, "~>2.0.5"
 Turn off xcode after installation, and open .xcworkspace file in the root of project:
 
 ![依赖](imgs/009.png)
+
+Note:Zplay Ads is integrated via CocoaPods in the sample. If you want manual integration, please refer to [HERE](https://github.com/zplayads/PlayableAdsDemo-iOS/blob/master/README-CN.md#22-%E6%89%8B%E5%8A%A8%E9%9B%86%E6%88%90playableads-sdk).
 
 ## 3. Add the following files into project
 
@@ -88,40 +91,43 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 ![获取广告位](imgs/015.png)
 
 ## 5. Add ZPLAY Ads as a new network on MoPub
-#### 5.1 Open Networks page, click *Add a Network* button
+#### 5.1 Open Networks page, click *New network* button
 ![add a network](imgs/016.png)
 
-#### 5.2 Click *Custom Native Network* link
+#### 5.2 Click *Custom SDK network* link
 ![custom native network](imgs/017.png)
 
-#### 5.3 Set the title as ZPLAY Ads（image 1), and configure ZPLAY Ads in the adunits which were applied in step 3(image 2 and 3).
+#### 5.3 Set the title as ZPLAY Ads Network, and configure ZPLAY Ads in the adunits which were applied in step 3(image 1 and 2).
 
-![配置](imgs/018.png)
+![配置](imgs/018-1.png)
+![配置](imgs/018-2.png)
+![配置](imgs/018-3.png)
 
-- Add the followings to image 2:
+- Add the followings to image 1:
 ```
 MPPlayableAdMobRewardedVideoCustomEvent
 ```
+**Note: MPPlayableAdMobRewardedVideoCustomEvent is the file name of adaptor in the sample(also mentioned in [Step 3](https://github.com/zplayads/PlayableMopubAdDemo-iOS/blob/master/README-CN.md#3-%E5%B0%86%E4%BB%A5%E4%B8%8B%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%B7%A5%E7%A8%8B%E9%87%8C%E9%9D%A2)). You are available to modify the name as you want, but please keep it the same as the file name of adaptor. **
 
-- Add the adunits you applied on ZPLAY Ads to image 3 as the following format:
+- Add the adunits you applied on ZPLAY Ads to image 2 as the following format:
 ```
 {
-	"APPID": "iOSDemoApp",
-	"AdUnitId": "iOSDemoAdUnit"
+	"APPID": "A650AB0D-7BFC-2A81-3066-D3170947C3DA",
+	"AdUnitId": "BAE5DAAC-04A2-2591-D5B0-38FA846E45E7"
 }
 ```
 Note: If necessary, please view step 1.3 to know how to change iosDemoApp to the APPID you applied on ZPLAY Ads, and view step 1.6 to find the way to change iosDemoAdUnit to AdUnitId applied on ZPLAY Ads.
 
 ## 6. Turn on ZPLAY Ads network on MoPub
-#### 6.1  Open Segments page, and click *Global Segment* link
+#### 6.1  Open Segments page, and click Global Segment
 ![Global Segment](imgs/019.png)
 
-#### 6.2 Find the app and adunit which have been integrated to ZPLAY Ads（as the MediationMopub in screenshot below), turn on ZPLAY Ads network(as the turn on button in screenshot below).
+#### 6.2 Find the app and adunit which have been integrated to ZPLAY Ads（as the MediationMopub in screenshot below), turn on ZPLAY Ads Network(as the turn on button in screenshot below).
 
 ![turn on](imgs/020.png)
 
 ## 7. Confirm the configuration of ZPLAY Ads
-After step 6.2, the ZPLAY Ads network has been available already. Enter AdUnit Management page, the ad sources list will be shown as below if configuration is successful. If not, please check according to the previous steps.
+After step 6.2, the ZPLAY Ads Network has been available already. Enter AdUnit Management page, the ad sources list will be shown as below if configuration is successful. If not, please check according to the previous steps.
 
 ![确认可玩广告配置成功](imgs/021.png)
 
