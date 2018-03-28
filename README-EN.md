@@ -1,7 +1,7 @@
 
 ## Directory
 1. Apply for app ID and ad unit ID on ZPLAY Ads platform
-2. Add Mopub SDK and ZPLAY Ads SDK
+2. Add MoPub SDK and ZPLAY Ads SDK
 3. Add the following files into project
 4. Set ad unit for ZPLAY Ads on MoPub
 5. Add ZPLAY Ads as a new network on MoPub
@@ -39,7 +39,7 @@ Note: You are available to use the following ID when testing(not charge). Please
 |iOS|Reward Video|A650AB0D-7BFC-2A81-3066-D3170947C3DA|BAE5DAAC-04A2-2591-D5B0-38FA846E45E7|
 |iOS|Interstitial|A650AB0D-7BFC-2A81-3066-D3170947C3DA|0868EBC0-7768-40CA-4226-F9924221C8EB|
 
-## 2. Add Mopub SDK and ZPLAY Ads SDK as below:
+## 2. Add MoPub SDK and ZPLAY Ads SDK as below:
 
 How to use [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
