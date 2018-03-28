@@ -104,7 +104,7 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 ```
 MPPlayableAdMobRewardedVideoCustomEvent
 ```
-注意：此处的名字即为程序示例中的[适配器类](./PlayableMopubAd/MPPlayableAdMobRewardedVideoCustomEvent.m)的文件名，这个名字可以按照自己的需要修改为其它名字，但要保证此处的名与适配器类的名一致。
+注意：MPPlayableAdMobRewardedVideoCustomEvent为程序示例中[适配器](./PlayableMopubAd/MPPlayableAdMobRewardedVideoCustomEvent.m)([步骤3]()中提到的文件)的文件名，这个名字可以按照自己的需要修改为其它名字，但要保证修改的名字与适配器的文件名一致。
 
 - 请在图示3的位置添加在可玩广告平台申请的广告位信息，格式如下：
 ```
