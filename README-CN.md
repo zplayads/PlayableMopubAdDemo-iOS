@@ -1,7 +1,7 @@
 
 ## 目录
 1. 在可玩广告平台申请应用ID及广告位ID
-2. 添加MoPub SDK和PlayableAds SDK
+2. 添加MoPub SDK和ZPLAY Ads SDK
 3. 将以下文件添加到工程里面 
 4. 在MoPub平台为可玩广告配置广告位 
 5. 在MoPub平台增加可玩广告为新的广告源 
@@ -34,11 +34,12 @@
 
 注：您在测试中可使用如下id进行测试，测试id不会产生收益，应用上线时请使用您申请的正式id。
 
-|操作系统|  App_ID  |  Ad_Unit_id|
-|--------|----------|------------|
-|iOS|A650AB0D-7BFC-2A81-3066-D3170947C3DA|BAE5DAAC-04A2-2591-D5B0-38FA846E45E7|
+|操作系统|广告形式|  App_ID  |  Ad_Unit_id|
+|--------|----|----------|------------|
+|iOS|激励视频|A650AB0D-7BFC-2A81-3066-D3170947C3DA|BAE5DAAC-04A2-2591-D5B0-38FA846E45E7|
+|iOS|插屏|A650AB0D-7BFC-2A81-3066-D3170947C3DA|0868EBC0-7768-40CA-4226-F9924221C8EB|
 
-## 2. 添加MoPub SDK和PlayableAds SDK，步骤如下：
+## 2. 添加MoPub SDK和ZPLAY Ads SDK，步骤如下：
 
 了解如何使用[Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
@@ -106,7 +107,7 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 ```
 MPPlayableAdMobRewardedVideoCustomEvent
 ```
-注意：MPPlayableAdMobRewardedVideoCustomEvent为程序示例中适配器([步骤3](https://github.com/zplayads/PlayableMopubAdDemo-iOS/blob/master/README-CN.md#3-%E5%B0%86%E4%BB%A5%E4%B8%8B%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%B7%A5%E7%A8%8B%E9%87%8C%E9%9D%A2)中提到的文件)的文件名，这个名字可以按照自己的需要修改为其它名字，但要保证修改的名字与适配器的文件名一致。
+**注意：MPPlayableAdMobRewardedVideoCustomEvent为程序示例中适配器([步骤3](https://github.com/zplayads/PlayableMopubAdDemo-iOS/blob/master/README-CN.md#3-%E5%B0%86%E4%BB%A5%E4%B8%8B%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%B7%A5%E7%A8%8B%E9%87%8C%E9%9D%A2)中提到的文件)的文件名，这个名字可以按照自己的需要修改为其它名字，但要保证修改的名字与适配器的文件名一致。**
 
 - 请在图示2的位置添加在可玩广告平台申请的广告位信息，格式如下：
 ```
