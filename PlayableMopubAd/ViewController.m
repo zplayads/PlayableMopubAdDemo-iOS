@@ -34,12 +34,12 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     _mLog.text = @"";
     [self addLog:@"requestAd..."];
-    [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:@"cd7acdd3f1cf43999bb244d2890f9817"
+    [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:@"be532d84e020492dba00e91e4deeade3"
                                withMediationSettings:nil];
 }
 
 - (IBAction)presentAd:(UIButton *)sender {
-    [MPRewardedVideo presentRewardedVideoAdForAdUnitID:@"cd7acdd3f1cf43999bb244d2890f9817"
+    [MPRewardedVideo presentRewardedVideoAdForAdUnitID:@"be532d84e020492dba00e91e4deeade3"
                                     fromViewController:self withReward:nil];
 }
 
