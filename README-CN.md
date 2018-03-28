@@ -90,27 +90,29 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 ![获取广告位](imgs/015.png)
 
 ## 5. 在MoPub平台增加可玩广告为新的广告源
-#### 5.1 进入“networks”页面，点击“add a network”按钮
+#### 5.1 进入“Networks”页面，点击“New network”按钮
 ![add a network](imgs/016.png)
 
-#### 5.2 点击“custom native network“链接
+#### 5.2 点击“custom SDK network“链接
 ![custom native network](imgs/017.png)
 
-#### 5.3 添加可玩广告平台名称为ZPLAY Ads，并且在步骤3中申请的广告位中配置可玩广告（图示2和图示3）。
+#### 5.3 添加可玩广告平台名称为ZPLAY Ads，并且在步骤3中申请的广告位中配置可玩广告（图示1和图示2）。
 
-![配置](imgs/018.png)
+![配置](imgs/018-1.png)
+![配置](imgs/018-2.png)
+![配置](imgs/018-3.png)
 
-- 请在图示2的位置添加如下信息：
+- 请在图示1的位置添加如下信息：
 ```
 MPPlayableAdMobRewardedVideoCustomEvent
 ```
 注意：MPPlayableAdMobRewardedVideoCustomEvent为程序示例中适配器([步骤3](https://github.com/zplayads/PlayableMopubAdDemo-iOS/blob/master/README-CN.md#3-%E5%B0%86%E4%BB%A5%E4%B8%8B%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%B7%A5%E7%A8%8B%E9%87%8C%E9%9D%A2)中提到的文件)的文件名，这个名字可以按照自己的需要修改为其它名字，但要保证修改的名字与适配器的文件名一致。
 
-- 请在图示3的位置添加在可玩广告平台申请的广告位信息，格式如下：
+- 请在图示2的位置添加在可玩广告平台申请的广告位信息，格式如下：
 ```
 {
-	"APPID": "iOSDemoApp",
-	"AdUnitId": "iOSDemoAdUnit"
+	"APPID": "A650AB0D-7BFC-2A81-3066-D3170947C3DA",
+	"AdUnitId": "BAE5DAAC-04A2-2591-D5B0-38FA846E45E7"
 }
 ```
 注意：将iOSDemoApp替换成您在可玩广告平台申请的APPID（步骤1.3），将iOSDemoAdUnit替换成您在可玩广告平台申请的AdUnitId（步骤1.6）。
