@@ -56,6 +56,8 @@ pod “PlayableAds”, "~>2.0.5"
 
 ![依赖](imgs/009.png)
 
+注意：本示例使用CocoaPods集成ZPLAY Ads的，如果需要手动集成ZPLAY Ads请[参考](https://github.com/zplayads/PlayableAdsDemo-iOS/blob/master/README-CN.md#22-%E6%89%8B%E5%8A%A8%E9%9B%86%E6%88%90playableads-sdk).
+
 ## 3. 将以下文件添加到工程里面
 
 MPPlayableAdMobRewardedVideoCustomEvent.h
@@ -102,6 +104,7 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 ```
 MPPlayableAdMobRewardedVideoCustomEvent
 ```
+注意：此处的名字即为程序示例中的[适配器类](./PlayableMopubAd/MPPlayableAdMobRewardedVideoCustomEvent.m)的文件名，这个名字可以按照自己的需要修改为其它名字，但要保证此处的名与适配器类的名一致。
 
 - 请在图示3的位置添加在可玩广告平台申请的广告位信息，格式如下：
 ```
