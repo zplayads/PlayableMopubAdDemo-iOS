@@ -107,7 +107,7 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 ```
 MPPlayableAdMobRewardedVideoCustomEvent
 ```
-**注意：MPPlayableAdMobRewardedVideoCustomEvent为程序示例中适配器([步骤3](https://github.com/zplayads/PlayableMopubAdDemo-iOS/blob/master/README-CN.md#3-%E5%B0%86%E4%BB%A5%E4%B8%8B%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%B7%A5%E7%A8%8B%E9%87%8C%E9%9D%A2)中提到的文件)的文件名，这个名字可以按照自己的需要修改为其它名字，但要保证修改的名字与适配器的文件名一致。**
+**注意：图示1为适配器的文件名(不带后缀)，可以按个人需求更改为其它名字，请保证图示1填写的内容与项目中适配器的文件名(不带后缀)一致。 **
 
 - 请在图示2的位置添加在可玩广告平台申请的广告位信息，格式如下：
 ```
