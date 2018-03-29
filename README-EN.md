@@ -107,7 +107,7 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 ```
 MPPlayableAdMobRewardedVideoCustomEvent
 ```
-**Note: MPPlayableAdMobRewardedVideoCustomEvent is the file name of adaptor in the sample(also mentioned in [Step 3](https://github.com/zplayads/PlayableMopubAdDemo-iOS/blob/master/README-CN.md#3-%E5%B0%86%E4%BB%A5%E4%B8%8B%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%B7%A5%E7%A8%8B%E9%87%8C%E9%9D%A2)). You are available to modify the name as you want, but please keep it the same as the file name of adaptor.**
+**Note: MPPlayableAdMobRewardedVideoCustomEvent is the file name of adaptor(no file extension), and you are available to modify it as you want. Please make sure the content you filled in image 1 remains the same as the file name of adaptor(no file extension).**
 
 - Add the adunits you applied on ZPLAY Ads to image 2 as the following format:
 ```
