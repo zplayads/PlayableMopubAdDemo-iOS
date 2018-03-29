@@ -57,7 +57,7 @@ Turn off xcode after installation, and open .xcworkspace file in the root of pro
 
 ![依赖](imgs/009.png)
 
-Note:Zplay Ads is integrated via CocoaPods in the sample. If you want manual integration, please refer to [HERE](https://github.com/PurpleZhu/PlayableAdsDemo-iOS/blob/master/README-EN.md).
+Note:Zplay Ads is integrated via CocoaPods in the sample. If you want manual integration, please refer to [HERE](https://github.com/zplayads/PlayableAdsDemo-iOS/blob/master/README-EN.md).
 
 ## 3. Add the following files into project
 
