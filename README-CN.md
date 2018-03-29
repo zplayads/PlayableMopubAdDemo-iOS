@@ -57,7 +57,7 @@ pod “PlayableAds”, "~>2.0.5"
 
 ![依赖](imgs/009.png)
 
-注意：本示例使用CocoaPods集成ZPLAY Ads的，如果需要手动集成ZPLAY Ads请[参考](https://github.com/zplayads/PlayableAdsDemo-iOS/blob/master/README-CN.md#22-%E6%89%8B%E5%8A%A8%E9%9B%86%E6%88%90playableads-sdk).
+**注意：本示例使用CocoaPods集成ZPLAY Ads的，如果需要手动集成ZPLAY Ads请[参考](https://github.com/zplayads/PlayableAdsDemo-iOS/blob/master/README-CN.md#22-%E6%89%8B%E5%8A%A8%E9%9B%86%E6%88%90playableads-sdk).**
 
 ## 3. 将以下文件添加到工程里面
 
@@ -69,24 +69,24 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 
 ## 4. 在MoPub平台为可玩广告配置广告位
 #### 4.1 为可玩广告新建广告位
-- 进入应用，点击“new add unit”按钮
+- 进入应用，点击“New add unit”按钮
 
 ![new add unit](imgs/011.png)
 
-- 创建广告位，请注意format应该为Rewarded video，点击“save”按钮
+- 创建广告位，请注意format应该为Rewarded video，点击“Save”按钮
 
 ![Rewarded video](imgs/012.png) 
 
-- 获取新创建广告位的ad unit ID
+- 获取新创建广告位的Ad unit ID
 
 ![创建广告位](imgs/013.png)
 
 #### 4.2 获取已有广告位的ID
-- 选择应用，进入广告位列表，选择要接入的广告位，点击进入。点击“edit ad unit”按钮，点击“view code integration”按钮
+- 选择应用，进入广告位列表，选择要接入的广告位，点击进入。点击“Edit ad unit”按钮，点击“View code integration”按钮
 
 ![view code integration](imgs/014.png)
 
-- 获取广告位的ad unit ID
+- 获取广告位的Ad unit ID
 
 ![获取广告位](imgs/015.png)
 
@@ -94,7 +94,7 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 #### 5.1 进入“Networks”页面，点击“New network”按钮
 ![add a network](imgs/016.png)
 
-#### 5.2 点击“custom SDK network“链接
+#### 5.2 点击“Custom SDK network“链接
 ![custom native network](imgs/017.png)
 
 #### 5.3 添加可玩广告平台名称为ZPLAY Ads，并且在步骤3中申请的广告位中配置可玩广告（图示1和图示2）。
@@ -119,7 +119,7 @@ MPPlayableAdMobRewardedVideoCustomEvent
 注意：将iOSDemoApp替换成您在可玩广告平台申请的APPID（步骤1.3），将iOSDemoAdUnit替换成您在可玩广告平台申请的AdUnitId（步骤1.6）。
 
 ## 6. 在MoPub平台打开可玩广告广告源
-#### 6.1 进入“segments”页面，点击“Global Segment”链接
+#### 6.1 进入“Segments”页面，点击“Global Segment”链接
 ![Global Segment](imgs/019.png)
 
 #### 6.2 找到接入可玩广告的应用（如示例中MediationMopub）及广告位（示例中的新可玩广告），打开可玩广告广告源（图中的turn on所示的按钮）
