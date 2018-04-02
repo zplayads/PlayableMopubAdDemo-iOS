@@ -43,6 +43,7 @@
                                     fromViewController:self withReward:nil];
 }
 
+#pragma mark - MPRewardedVideoDelegate
 - (void)rewardedVideoAdDidLoadForAdUnitID:(NSString *)adUnitID {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     [self addLog:@"rewardedVideoAdDidLoadForAdUnitID"];
@@ -55,6 +56,10 @@
 
 - (void)rewardedVideoAdDidExpireForAdUnitID:(NSString *)adUnitID {
     [self addLog:@"rewardedVideoAdDidExpireForAdUnitID"];
+}
+
+- (void)rewardedVideoAdShouldRewardForAdUnitID:(NSString *)adUnitID reward:(MPRewardedVideoReward *)reward {
+     [self addLog:@"rewardedVideoAdShouldRewardForAdUnitID"];
 }
 
 - (void)addLog:(NSString*)msg {
