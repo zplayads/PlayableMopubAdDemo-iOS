@@ -45,17 +45,23 @@
     return self.pAds.ready;
 }
 
+#pragma mark - PlayableAdsDelegate
 - (void)playableAdsDidLoad:(PlayableAds *)ads {
     [self.delegate rewardedVideoDidLoadAdForCustomEvent:self];
 }
 
-- (void)playableAdsDidRewardUser:(PlayableAds *)ads {
-    [self.delegate rewardedVideoDidExpireForCustomEvent:self];
-}
-#pragma mark - PlayableAdsDelegate
 - (void)playableAds:(PlayableAds *)ads didFailToLoadWithError:(NSError *)error {
     NSLog(@"playableAds didFailToLoadWithError: %@", error);
     [self.delegate rewardedVideoDidFailToLoadAdForCustomEvent:self error:error];
+}
+
+- (void)playableAdsDidRewardUser:(PlayableAds *)ads {
+    MPRewardedVideoReward *reward = [[MPRewardedVideoReward alloc] initWithCurrencyType:@"ZPLAYAds" amount:[NSNumber numberWithInt:1]];
+    [self.delegate rewardedVideoShouldRewardUserForCustomEvent:self  reward: reward];
+}
+
+- (void)playableAdsDidDismissScreen:(PlayableAds *)ads {
+    [self.delegate rewardedVideoDidExpireForCustomEvent:self];
 }
 
 @end
