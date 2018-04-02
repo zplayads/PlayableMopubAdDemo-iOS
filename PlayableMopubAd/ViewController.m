@@ -12,6 +12,7 @@
 @interface ViewController () <MPRewardedVideoDelegate>
 
 @property (nonatomic) MPRewardedVideo *mpRewardedVideo;
+@property (weak, nonatomic) IBOutlet UILabel *mLog;
 
 @end
 
@@ -30,24 +31,38 @@
 }
 
 - (IBAction)requestAd:(UIButton *)sender {
-    [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:@"cd7acdd3f1cf43999bb244d2890f9817"
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    _mLog.text = @"";
+    [self addLog:@"requestAd..."];
+    [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:@"be532d84e020492dba00e91e4deeade3"
                                withMediationSettings:nil];
 }
 
 - (IBAction)presentAd:(UIButton *)sender {
-    [MPRewardedVideo presentRewardedVideoAdForAdUnitID:@"cd7acdd3f1cf43999bb244d2890f9817"
+    [MPRewardedVideo presentRewardedVideoAdForAdUnitID:@"be532d84e020492dba00e91e4deeade3"
                                     fromViewController:self withReward:nil];
 }
 
+#pragma mark - MPRewardedVideoDelegate
 - (void)rewardedVideoAdDidLoadForAdUnitID:(NSString *)adUnitID {
-    NSLog(@"=== rewardedVideoAdDidLoadForAdUnitID");
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    [self addLog:@"rewardedVideoAdDidLoadForAdUnitID"];
 }
 
 - (void)rewardedVideoAdDidFailToLoadForAdUnitID:(NSString *)adUnitID error:(NSError *)error {
-    NSLog(@"=== rewardedVideoAdDidFailToLoadForAdUnitID %@", error);
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    [self addLog:@"rewardedVideoAdDidFailToLoadForAdUnitID"];
 }
 
 - (void)rewardedVideoAdDidExpireForAdUnitID:(NSString *)adUnitID {
-    NSLog(@"=== rewardedVideoAdDidExpireForAdUnitID");
+    [self addLog:@"rewardedVideoAdDidExpireForAdUnitID"];
+}
+
+- (void)rewardedVideoAdShouldRewardForAdUnitID:(NSString *)adUnitID reward:(MPRewardedVideoReward *)reward {
+     [self addLog:@"rewardedVideoAdShouldRewardForAdUnitID"];
+}
+
+- (void)addLog:(NSString*)msg {
+    _mLog.text = [_mLog.text stringByAppendingFormat:@"\n%@", msg];
 }
 @end
