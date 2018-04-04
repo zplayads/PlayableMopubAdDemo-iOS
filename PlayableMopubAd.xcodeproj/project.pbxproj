@@ -16,7 +16,7 @@
 		C76A6E8E1FAB1FEF00025305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76A6E8C1FAB1FEF00025305 /* LaunchScreen.storyboard */; };
 		C76A6E911FAB1FEF00025305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A6E901FAB1FEF00025305 /* main.m */; };
 		C76A6E9B1FAB1FEF00025305 /* PlayableMopubAdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A6E9A1FAB1FEF00025305 /* PlayableMopubAdTests.m */; };
-		C76A6EA81FAB227B00025305 /* MPPlayableAdMobRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A6EA71FAB227B00025305 /* MPPlayableAdMobRewardedVideoCustomEvent.m */; };
+		C76A6EA81FAB227B00025305 /* MPZPLAYAdsRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A6EA71FAB227B00025305 /* MPZPLAYAdsRewardedVideoCustomEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,8 @@
 		C76A6E961FAB1FEF00025305 /* PlayableMopubAdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayableMopubAdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76A6E9A1FAB1FEF00025305 /* PlayableMopubAdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayableMopubAdTests.m; sourceTree = "<group>"; };
 		C76A6E9C1FAB1FEF00025305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C76A6EA61FAB226100025305 /* MPPlayableAdMobRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPlayableAdMobRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
-		C76A6EA71FAB227B00025305 /* MPPlayableAdMobRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPlayableAdMobRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
+		C76A6EA61FAB226100025305 /* MPZPLAYAdsRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPZPLAYAdsRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
+		C76A6EA71FAB227B00025305 /* MPZPLAYAdsRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPZPLAYAdsRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
 		D54A6631B95F08F1FE8C8C9C /* Pods-PlayableMopubAdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableMopubAdTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableMopubAdTests/Pods-PlayableMopubAdTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9236AFC5FDEAE92C8EAEE0E /* Pods-PlayableMopubAdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableMopubAdTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableMopubAdTests/Pods-PlayableMopubAdTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE059D8A73426D9CCFBF57BF /* libPods-PlayableMopubAd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlayableMopubAd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,8 +109,8 @@
 			children = (
 				C76A6E811FAB1FEF00025305 /* AppDelegate.h */,
 				C76A6E821FAB1FEF00025305 /* AppDelegate.m */,
-				C76A6EA61FAB226100025305 /* MPPlayableAdMobRewardedVideoCustomEvent.h */,
-				C76A6EA71FAB227B00025305 /* MPPlayableAdMobRewardedVideoCustomEvent.m */,
+				C76A6EA61FAB226100025305 /* MPZPLAYAdsRewardedVideoCustomEvent.h */,
+				C76A6EA71FAB227B00025305 /* MPZPLAYAdsRewardedVideoCustomEvent.m */,
 				C76A6E841FAB1FEF00025305 /* ViewController.h */,
 				C76A6E851FAB1FEF00025305 /* ViewController.m */,
 				C76A6E871FAB1FEF00025305 /* Main.storyboard */,
@@ -195,7 +195,7 @@
 				TargetAttributes = {
 					C76A6E7D1FAB1FEF00025305 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					C76A6E951FAB1FEF00025305 = {
 						CreatedOnToolsVersion = 9.0;
@@ -390,7 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76A6EA81FAB227B00025305 /* MPPlayableAdMobRewardedVideoCustomEvent.m in Sources */,
+				C76A6EA81FAB227B00025305 /* MPZPLAYAdsRewardedVideoCustomEvent.m in Sources */,
 				C76A6E861FAB1FEF00025305 /* ViewController.m in Sources */,
 				C76A6E911FAB1FEF00025305 /* main.m in Sources */,
 				C76A6E831FAB1FEF00025305 /* AppDelegate.m in Sources */,
@@ -544,12 +544,14 @@
 			baseConfigurationReference = 069EA153EE893340EB0E8E42 /* Pods-PlayableMopubAd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5QP2NLJB42;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VG25A6M88T;
 				INFOPLIST_FILE = PlayableMopubAd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.PlayableMopubAd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a0f49df3-171d-4535-b30a-dd800ef8f012";
+				PROVISIONING_PROFILE_SPECIFIER = wanghaiyingDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -559,12 +561,14 @@
 			baseConfigurationReference = 2736500C1CE67F3A721F3392 /* Pods-PlayableMopubAd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5QP2NLJB42;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VG25A6M88T;
 				INFOPLIST_FILE = PlayableMopubAd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.PlayableMopubAd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a0f49df3-171d-4535-b30a-dd800ef8f012";
+				PROVISIONING_PROFILE_SPECIFIER = wanghaiyingDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
