@@ -10,13 +10,16 @@
 		637B4B420D1B1852BD36D618 /* libPods-PlayableMopubAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE059D8A73426D9CCFBF57BF /* libPods-PlayableMopubAd.a */; };
 		68ED57B7E223C19AB0246337 /* libPods-PlayableMopubAdTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6F4B383B5BECB2A914FE1C /* libPods-PlayableMopubAdTests.a */; };
 		C76A6E831FAB1FEF00025305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A6E821FAB1FEF00025305 /* AppDelegate.m */; };
-		C76A6E861FAB1FEF00025305 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A6E851FAB1FEF00025305 /* ViewController.m */; };
+		C76A6E861FAB1FEF00025305 /* RewardedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A6E851FAB1FEF00025305 /* RewardedVideoViewController.m */; };
 		C76A6E891FAB1FEF00025305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76A6E871FAB1FEF00025305 /* Main.storyboard */; };
 		C76A6E8B1FAB1FEF00025305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76A6E8A1FAB1FEF00025305 /* Assets.xcassets */; };
 		C76A6E8E1FAB1FEF00025305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76A6E8C1FAB1FEF00025305 /* LaunchScreen.storyboard */; };
 		C76A6E911FAB1FEF00025305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A6E901FAB1FEF00025305 /* main.m */; };
 		C76A6E9B1FAB1FEF00025305 /* PlayableMopubAdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A6E9A1FAB1FEF00025305 /* PlayableMopubAdTests.m */; };
 		C76A6EA81FAB227B00025305 /* MPZPLAYAdsRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A6EA71FAB227B00025305 /* MPZPLAYAdsRewardedVideoCustomEvent.m */; };
+		C792D37B207C70460051DDE7 /* MPZPLAYAdsInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C792D37A207C70460051DDE7 /* MPZPLAYAdsInterstitialCustomEvent.m */; };
+		C792D381207C85F70051DDE7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C792D380207C85F70051DDE7 /* MainViewController.m */; };
+		C792D384207C860B0051DDE7 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C792D383207C860B0051DDE7 /* InterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +39,8 @@
 		C76A6E7E1FAB1FEF00025305 /* PlayableMopubAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayableMopubAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76A6E811FAB1FEF00025305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C76A6E821FAB1FEF00025305 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C76A6E841FAB1FEF00025305 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C76A6E851FAB1FEF00025305 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C76A6E841FAB1FEF00025305 /* RewardedVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardedVideoViewController.h; sourceTree = "<group>"; };
+		C76A6E851FAB1FEF00025305 /* RewardedVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardedVideoViewController.m; sourceTree = "<group>"; };
 		C76A6E881FAB1FEF00025305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C76A6E8A1FAB1FEF00025305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C76A6E8D1FAB1FEF00025305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +51,12 @@
 		C76A6E9C1FAB1FEF00025305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76A6EA61FAB226100025305 /* MPZPLAYAdsRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPZPLAYAdsRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
 		C76A6EA71FAB227B00025305 /* MPZPLAYAdsRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPZPLAYAdsRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
+		C792D379207C70460051DDE7 /* MPZPLAYAdsInterstitialCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPZPLAYAdsInterstitialCustomEvent.h; sourceTree = "<group>"; };
+		C792D37A207C70460051DDE7 /* MPZPLAYAdsInterstitialCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPZPLAYAdsInterstitialCustomEvent.m; sourceTree = "<group>"; };
+		C792D37F207C85F70051DDE7 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C792D380207C85F70051DDE7 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C792D382207C860B0051DDE7 /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		C792D383207C860B0051DDE7 /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
 		D54A6631B95F08F1FE8C8C9C /* Pods-PlayableMopubAdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableMopubAdTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableMopubAdTests/Pods-PlayableMopubAdTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9236AFC5FDEAE92C8EAEE0E /* Pods-PlayableMopubAdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableMopubAdTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableMopubAdTests/Pods-PlayableMopubAdTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE059D8A73426D9CCFBF57BF /* libPods-PlayableMopubAd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlayableMopubAd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,8 +120,14 @@
 				C76A6E821FAB1FEF00025305 /* AppDelegate.m */,
 				C76A6EA61FAB226100025305 /* MPZPLAYAdsRewardedVideoCustomEvent.h */,
 				C76A6EA71FAB227B00025305 /* MPZPLAYAdsRewardedVideoCustomEvent.m */,
-				C76A6E841FAB1FEF00025305 /* ViewController.h */,
-				C76A6E851FAB1FEF00025305 /* ViewController.m */,
+				C792D379207C70460051DDE7 /* MPZPLAYAdsInterstitialCustomEvent.h */,
+				C792D37A207C70460051DDE7 /* MPZPLAYAdsInterstitialCustomEvent.m */,
+				C792D37F207C85F70051DDE7 /* MainViewController.h */,
+				C792D380207C85F70051DDE7 /* MainViewController.m */,
+				C792D382207C860B0051DDE7 /* InterstitialViewController.h */,
+				C792D383207C860B0051DDE7 /* InterstitialViewController.m */,
+				C76A6E841FAB1FEF00025305 /* RewardedVideoViewController.h */,
+				C76A6E851FAB1FEF00025305 /* RewardedVideoViewController.m */,
 				C76A6E871FAB1FEF00025305 /* Main.storyboard */,
 				C76A6E8A1FAB1FEF00025305 /* Assets.xcassets */,
 				C76A6E8C1FAB1FEF00025305 /* LaunchScreen.storyboard */,
@@ -391,7 +406,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76A6EA81FAB227B00025305 /* MPZPLAYAdsRewardedVideoCustomEvent.m in Sources */,
-				C76A6E861FAB1FEF00025305 /* ViewController.m in Sources */,
+				C792D381207C85F70051DDE7 /* MainViewController.m in Sources */,
+				C76A6E861FAB1FEF00025305 /* RewardedVideoViewController.m in Sources */,
+				C792D37B207C70460051DDE7 /* MPZPLAYAdsInterstitialCustomEvent.m in Sources */,
+				C792D384207C860B0051DDE7 /* InterstitialViewController.m in Sources */,
 				C76A6E911FAB1FEF00025305 /* main.m in Sources */,
 				C76A6E831FAB1FEF00025305 /* AppDelegate.m in Sources */,
 			);

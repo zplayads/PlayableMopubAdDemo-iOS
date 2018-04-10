@@ -5,18 +5,18 @@
 //  Created by lgd on 2017/11/2.
 //  Copyright © 2017年 lgd. All rights reserved.
 //
-#import "ViewController.h"
+#import "RewardedVideoViewController.h"
 #import "MoPub.h"
 #import "MPRewardedVideo.h"
 
-@interface ViewController () <MPRewardedVideoDelegate>
+@interface RewardedVideoViewController () <MPRewardedVideoDelegate>
 
 @property (nonatomic) MPRewardedVideo *mpRewardedVideo;
 @property (weak, nonatomic) IBOutlet UILabel *mLog;
 
 @end
 
-@implementation ViewController
+@implementation RewardedVideoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
