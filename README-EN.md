@@ -61,11 +61,9 @@ Note:Zplay Ads is integrated via CocoaPods in the sample. If you want manual int
 
 ## 3. Add the following files into project
 
-MPPlayableAdMobRewardedVideoCustomEvent.h
+[MPZPLAYAdsRewardedVideoCustomEvent.h](./PlayableMopubAd/MPZPLAYAdsRewardedVideoCustomEvent.h)
 
-MPPlayableAdMobRewardedVideoCustomEvent.m
-
-![依赖](imgs/010.png)
+[MPZPLAYAdsRewardedVideoCustomEvent.m](./PlayableMopubAd/MPZPLAYAdsRewardedVideoCustomEvent.m)
 
 ## 4. Set ad unit for ZPLAY Ads on MoPub
 #### 4.1 Create new adunit for ZPLAY Ads
@@ -105,9 +103,9 @@ MPPlayableAdMobRewardedVideoCustomEvent.m
 
 - Add the followings to image 1:
 ```
-MPPlayableAdMobRewardedVideoCustomEvent
+MPZPLAYAdsRewardedVideoCustomEvent
 ```
-**Note: MPPlayableAdMobRewardedVideoCustomEvent is the file name of adaptor(no file extension), and you are available to modify it as you want. Please make sure the content you filled in image 1 remains the same as the file name of adaptor(no file extension).**
+**Note: MPZPLAYAdsRewardedVideoCustomEvent is the file name of adaptor(no file extension), and you are available to modify it as you want. Please make sure the content you filled in image 1 remains the same as the file name of adaptor(no file extension).**
 
 - Add the adunits you applied on ZPLAY Ads to image 2 as the following format:
 ```
@@ -122,7 +120,7 @@ Note: If necessary, please view step 1.3 to know how to change iosDemoApp to the
 #### 6.1  Open Segments page, and click Global Segment
 ![Global Segment](imgs/019.png)
 
-#### 6.2 Find the app and adunit which have been integrated to ZPLAY Ads（as the MediationMopub in screenshot below), turn on ZPLAY Ads Network(as the turn on button in screenshot below).
+#### 6.2 Find the app and adunit which have been integrated to ZPLAY Ads Network（as the PlayableMopubAd in screenshot below), turn on ZPLAY Ads Network(as the turn on button in screenshot below).
 
 ![turn on](imgs/020.png)
 
@@ -144,12 +142,7 @@ Here are the configurations:
 - Image 5: Show ad, please fill in the adunit ID applied on MoPub correctly(view step 4 for details).
 - Image 6: Add MoPub callback interface
 
-## 9. Debugging
-Execute the operation of image 4 in Step 8 to request ad and view logs.
-
-![调试信息](imgs/023.png)
-
-## 10. Sample
+## 9. Sample
 View [Demo](https://github.com/zplayads/PlayableMopubAdDemo-iOS)
 
 Note: Please execute pod install in the root of project in Terminal before operating demo.

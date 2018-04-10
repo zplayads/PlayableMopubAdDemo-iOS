@@ -1,12 +1,12 @@
 //
-//  MPPlayableAdMobRewardedVideoCustomEvent.m
+//  MPZPLAYAdsRewardedVideoCustomEvent.h
 //  PlayableMopubAd
 //
 //  Created by lgd on 2017/11/2.
 //  Copyright © 2017年 lgd. All rights reserved.
 //
 
-#import "MPPlayableAdMobRewardedVideoCustomEvent.h"
+#import "MPZPLAYAdsRewardedVideoCustomEvent.h"
 
 #import "MPLogging.h"
 #import "MPRewardedVideoError.h"
@@ -15,7 +15,7 @@
 
 @import PlayableAds;
 
-@interface MPPlayableAdMobRewardedVideoCustomEvent ()<PlayableAdsDelegate>
+@interface MPZPLAYAdsRewardedVideoCustomEvent ()<PlayableAdsDelegate>
 
 @property (nonatomic) PlayableAds *pAds;
 @property NSString *appId;
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation MPPlayableAdMobRewardedVideoCustomEvent
+@implementation MPZPLAYAdsRewardedVideoCustomEvent
 
 - (void)initializeSdkWithParameters:(NSDictionary *)parameters {
 }
@@ -38,7 +38,12 @@
 }
 
 - (void)presentRewardedVideoFromViewController:(UIViewController *)viewController {
-    [self.pAds present];
+    if (self.pAds.isReady){
+        [self.pAds present];
+    }else{
+        [self.delegate rewardedVideoDidFailToPlayForCustomEvent:self error:nil];
+        NSLog(@"ZPLAYAds is not ready.");
+    }
 }
 
 - (BOOL)hasAdAvailable {
@@ -61,7 +66,31 @@
 }
 
 - (void)playableAdsDidDismissScreen:(PlayableAds *)ads {
+    [self.delegate rewardedVideoDidDisappearForCustomEvent:self];
     [self.delegate rewardedVideoDidExpireForCustomEvent:self];
+}
+
+- (void)playableAdsDidStartPlaying:(PlayableAds *)ads {
+    [self.delegate rewardedVideoDidAppearForCustomEvent:self];
+}
+
+- (void)playableAdsWillPresentScreen:(PlayableAds *)ads {
+    [self.delegate rewardedVideoWillAppearForCustomEvent:self];
+}
+
+- (void)playableAdsDidEndPlaying:(PlayableAds *)ads {
+}
+
+- (void)playableAdsWillDismissScreen:(PlayableAds *)ads {
+    [self.delegate rewardedVideoWillDisappearForCustomEvent:self];
+}
+
+- (void)playableAdsDidClickFromLandingPage:(PlayableAds *)ads {
+    [self.delegate rewardedVideoDidReceiveTapEventForCustomEvent:self];
+}
+
+- (void)playableAdsWillLeaveApplication:(PlayableAds *)ads {
+    [self.delegate rewardedVideoWillLeaveApplicationForCustomEvent:self];
 }
 
 @end

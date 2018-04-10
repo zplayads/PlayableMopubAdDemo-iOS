@@ -62,6 +62,35 @@
      [self addLog:@"rewardedVideoAdShouldRewardForAdUnitID"];
 }
 
+- (void)rewardedVideoAdDidFailToPlayForAdUnitID:(NSString *)adUnitID error:(NSError *)error {
+    [self addLog:@"rewardedVideoAdDidFailToPlayForAdUnitID"];
+}
+
+- (void)rewardedVideoAdWillAppearForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdWillAppearForAdUnitID"];
+}
+
+- (void)rewardedVideoAdDidAppearForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdDidAppearForAdUnitID"];
+}
+
+- (void)rewardedVideoAdWillDisappearForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdWillDisappearForAdUnitID"];
+}
+
+- (void)rewardedVideoAdDidDisappearForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdDidDisappearForAdUnitID"];
+}
+
+- (void)rewardedVideoAdDidReceiveTapEventForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdDidReceiveTapEventForAdUnitID"];
+}
+
+- (void)rewardedVideoAdWillLeaveApplicationForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdWillLeaveApplicationForAdUnitID"];
+}
+
+
 - (void)addLog:(NSString*)msg {
     _mLog.text = [_mLog.text stringByAppendingFormat:@"\n%@", msg];
 }
