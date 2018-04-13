@@ -5,18 +5,18 @@
 //  Created by lgd on 2017/11/2.
 //  Copyright © 2017年 lgd. All rights reserved.
 //
-#import "ViewController.h"
+#import "RewardedVideoViewController.h"
 #import "MoPub.h"
 #import "MPRewardedVideo.h"
 
-@interface ViewController () <MPRewardedVideoDelegate>
+@interface RewardedVideoViewController () <MPRewardedVideoDelegate>
 
 @property (nonatomic) MPRewardedVideo *mpRewardedVideo;
 @property (weak, nonatomic) IBOutlet UILabel *mLog;
 
 @end
 
-@implementation ViewController
+@implementation RewardedVideoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -61,6 +61,35 @@
 - (void)rewardedVideoAdShouldRewardForAdUnitID:(NSString *)adUnitID reward:(MPRewardedVideoReward *)reward {
      [self addLog:@"rewardedVideoAdShouldRewardForAdUnitID"];
 }
+
+- (void)rewardedVideoAdDidFailToPlayForAdUnitID:(NSString *)adUnitID error:(NSError *)error {
+    [self addLog:@"rewardedVideoAdDidFailToPlayForAdUnitID"];
+}
+
+- (void)rewardedVideoAdWillAppearForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdWillAppearForAdUnitID"];
+}
+
+- (void)rewardedVideoAdDidAppearForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdDidAppearForAdUnitID"];
+}
+
+- (void)rewardedVideoAdWillDisappearForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdWillDisappearForAdUnitID"];
+}
+
+- (void)rewardedVideoAdDidDisappearForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdDidDisappearForAdUnitID"];
+}
+
+- (void)rewardedVideoAdDidReceiveTapEventForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdDidReceiveTapEventForAdUnitID"];
+}
+
+- (void)rewardedVideoAdWillLeaveApplicationForAdUnitID:(NSString *)adUnitID {
+     [self addLog:@"rewardedVideoAdWillLeaveApplicationForAdUnitID"];
+}
+
 
 - (void)addLog:(NSString*)msg {
     _mLog.text = [_mLog.text stringByAppendingFormat:@"\n%@", msg];

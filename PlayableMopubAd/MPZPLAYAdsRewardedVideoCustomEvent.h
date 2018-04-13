@@ -1,5 +1,5 @@
 //
-//  MPPlayableAdMobRewardedVideoCustomEvent.h
+//  MPRewardedVideoCustomEvent.h
 //  PlayableMopubAd
 //
 //  Created by lgd on 2017/11/2.
@@ -8,7 +8,7 @@
 
 #import "MPRewardedVideoCustomEvent.h"
 
-@interface MPPlayableAdMobRewardedVideoCustomEvent : MPRewardedVideoCustomEvent
+@interface MPZPLAYAdsRewardedVideoCustomEvent : MPRewardedVideoCustomEvent
 
 
 @end
