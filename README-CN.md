@@ -71,7 +71,7 @@ pod “PlayableAds”, "~>2.0.5"
 
 ![new add unit](imgs/011.png)
 
-- 创建广告位，请注意format应该为Rewarded video，点击“Save”按钮
+- 创建广告位，请注意format应该为Rewarded video或Fullscreen，点击“Save”按钮,此处以Rewarded video为例
 
 ![Rewarded video](imgs/012.png) 
 
