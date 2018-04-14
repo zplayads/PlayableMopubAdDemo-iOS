@@ -71,7 +71,7 @@ Note:Zplay Ads is integrated via CocoaPods in the sample. If you want manual int
 
 ![new add unit](imgs/011.png)
 
-- Choose Rewarded video when creating adunit, then click *Save* button
+- Choose Rewarded video or Fullscreen when creating adunit, then click *Save* button, take Rewarded video as an example here
 
 ![Rewarded video](imgs/012.png) 
 
