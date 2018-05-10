@@ -58,26 +58,18 @@
     [self.delegate interstitialCustomEventDidAppear:self];
 }
 
-- (void)playableAdsWillPresentScreen:(PlayableAds *)ads {
-    [self.delegate interstitialCustomEventWillAppear:self];
-}
-
 - (void)playableAdsDidEndPlaying:(PlayableAds *)ads {
 }
 
-- (void)playableAdsWillDismissScreen:(PlayableAds *)ads {
-    [self.delegate interstitialCustomEventWillDisappear:self];
-}
-
--(void)playableAdsDidClickFromVideoPage:(PlayableAds *)ads {
-    [self.delegate interstitialCustomEventDidReceiveTapEvent:self];
-}
-
--(void)playableAdsDidClickFromLandingPage:(PlayableAds *)ads {
+- (void)playableAdsDidClick:(PlayableAds *)ads{
     [self.delegate interstitialCustomEventDidReceiveTapEvent:self];
 }
 
 - (void)playableAdsDidRewardUser:(PlayableAds *)ads {
+}
+
+- (void)playableAdsDidPresentLandingPage:(PlayableAds *)ads{
+    
 }
 
 @end
