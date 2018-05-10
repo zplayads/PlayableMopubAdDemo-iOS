@@ -10,16 +10,16 @@ PODS:
     - mopub-ios-sdk/Avid
     - mopub-ios-sdk/Core
     - mopub-ios-sdk/Moat
-  - PlayableAds (2.0.5)
+  - PlayableAds (2.0.6)
 
 DEPENDENCIES:
   - mopub-ios-sdk
-  - PlayableAds (= 2.0.5)
+  - PlayableAds (= 2.0.6)
 
 SPEC CHECKSUMS:
   mopub-ios-sdk: 6220599bacc1c47f4117b7af5e9616f6779157a5
-  PlayableAds: 58ab7a6918c378e5309be4a40ffc796a82d8aae7
+  PlayableAds: ce69e4b8402dcc96f302082908156ee8d57d59fa
 
-PODFILE CHECKSUM: 6d072a1c5f1824faac68d55cb176b0e94b586e0d
+PODFILE CHECKSUM: 86ddc89de824538b3eb95dc2fa244006a88769ae
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.2.1

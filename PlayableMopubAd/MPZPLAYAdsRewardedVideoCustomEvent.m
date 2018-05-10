@@ -74,23 +74,14 @@
     [self.delegate rewardedVideoDidAppearForCustomEvent:self];
 }
 
-- (void)playableAdsWillPresentScreen:(PlayableAds *)ads {
-    [self.delegate rewardedVideoWillAppearForCustomEvent:self];
-}
-
 - (void)playableAdsDidEndPlaying:(PlayableAds *)ads {
 }
 
-- (void)playableAdsWillDismissScreen:(PlayableAds *)ads {
-    [self.delegate rewardedVideoWillDisappearForCustomEvent:self];
-}
-
-- (void)playableAdsDidClickFromLandingPage:(PlayableAds *)ads {
+- (void)playableAdsDidClick:(PlayableAds *)ads{
     [self.delegate rewardedVideoDidReceiveTapEventForCustomEvent:self];
 }
 
-- (void)playableAdsWillLeaveApplication:(PlayableAds *)ads {
-    [self.delegate rewardedVideoWillLeaveApplicationForCustomEvent:self];
+- (void)playableAdsDidPresentLandingPage:(PlayableAds *)ads{
+    
 }
-
 @end
