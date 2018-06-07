@@ -34,10 +34,10 @@
 
 Note: You are available to use the following ID when testing(not charge). Please switch to the ID you applied in production mode.
 
-|OS|Ad Type|  App_ID  |  Ad_Unit_id|
-|--------|--|----------|------------|
-|iOS|Reward Video|A650AB0D-7BFC-2A81-3066-D3170947C3DA|BAE5DAAC-04A2-2591-D5B0-38FA846E45E7|
-|iOS|Interstitial|A650AB0D-7BFC-2A81-3066-D3170947C3DA|0868EBC0-7768-40CA-4226-F9924221C8EB|
+| OS   | Ad Type      | App_ID                               | Ad_Unit_id                           |
+| ---- | ------------ | ------------------------------------ | ------------------------------------ |
+| iOS  | Reward Video | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
+| iOS  | Interstitial | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
 
 ## 2. Add MoPub SDK and ZPLAY Ads SDK as below:
 
@@ -46,7 +46,7 @@ How to use [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 #### 2.1 Add dependencies in Podfile file
 ```
 pod “mopub-ios-sdk”
-pod “PlayableAds”, "~>2.0.6"
+pod “PlayableAds”, "~>2.0.7"
 ```
 ![依赖](imgs/007.png)
 
