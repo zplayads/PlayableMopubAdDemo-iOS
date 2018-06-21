@@ -46,7 +46,7 @@
 #### 2.1 在Podfile文件中添加依赖项
 ```
 pod “mopub-ios-sdk”
-pod “PlayableAds”, "~>2.0.7"
+pod “PlayableAds”, "~>2.0.8"
 ```
 ![依赖](imgs/007.png)
 
