@@ -21,7 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [[MoPub sharedInstance] initializeRewardedVideoWithGlobalMediationSettings:nil delegate:self];
+    [[MoPub sharedInstance]  initializeSdkWithConfiguration:nil completion:^{
+        
+    }];
 }
 
 
@@ -34,8 +36,10 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     _mLog.text = @"";
     [self addLog:@"requestAd..."];
+    [MPRewardedVideo setDelegate:self forAdUnitId:@"be532d84e020492dba00e91e4deeade3"];
     [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:@"be532d84e020492dba00e91e4deeade3"
                                withMediationSettings:nil];
+    
 }
 
 - (IBAction)presentAd:(UIButton *)sender {
