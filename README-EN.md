@@ -14,19 +14,21 @@
 ---
 
 ## 1. Apply for app ID and ad unit ID on ZPLAY Ads platform
-#### 1.1 Click *ADD NEW APP* button in Application Management page
+#### 1.1 Click *ADD NEW APP* button in [Application Management](https://sellers.zplayads.com/#/app/appList/) page
 ![“应用管理”页面](imgs/024.png)
 
-#### 1.2 Fill in app information, and click *ADD* button, then go back to Application Management
+#### 1.2 Fill in app information, and click *Save* button, then go back to Application Management
 ![添加](imgs/025.png)
+
+![添加](imgs/025-2.png)
 
 #### 1.3 Obtain your app ID in Application Management page
 ![应用管理列表页](imgs/026.png)
 
-#### 1.4 Click *Add New AdUnit* button in app list, or you are also available to do this in AdUnit Management page
+#### 1.4 Click *ADD NEW ADUNIT* button in app list, or you are also available to do this in [AdUnit Management](https://sellers.zplayads.com/#/ad/placeList/) page
 ![创建广告位](imgs/027.png)
 
-#### 1.5 Fill in adunit information, and click *ADD* button, then go back to AdUnit Management
+#### 1.5 Fill in adunit information, and click *Save* button, then go back to AdUnit Management
 ![添加](imgs/028.png)
 
 #### 1.6 Obtain your adunit ID in AdUnit Management page
@@ -34,10 +36,10 @@
 
 Note: You are available to use the following ID when testing(not charge). Please switch to the ID you applied in production mode.
 
-|OS|Ad Type|  App_ID  |  Ad_Unit_id|
-|--------|--|----------|------------|
-|iOS|Reward Video|A650AB0D-7BFC-2A81-3066-D3170947C3DA|BAE5DAAC-04A2-2591-D5B0-38FA846E45E7|
-|iOS|Interstitial|A650AB0D-7BFC-2A81-3066-D3170947C3DA|0868EBC0-7768-40CA-4226-F9924221C8EB|
+| OS   | Ad Type      | App_ID                               | Ad_Unit_id                           |
+| ---- | ------------ | ------------------------------------ | ------------------------------------ |
+| iOS  | Reward Video | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
+| iOS  | Interstitial | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
 
 ## 2. Add MoPub SDK and ZPLAY Ads SDK as below:
 
@@ -46,7 +48,7 @@ How to use [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 #### 2.1 Add dependencies in Podfile file
 ```
 pod “mopub-ios-sdk”
-pod “PlayableAds”, "~>2.0.6"
+pod “PlayableAds”
 ```
 ![依赖](imgs/007.png)
 
@@ -65,7 +67,7 @@ Note:Zplay Ads is integrated via CocoaPods in the sample. If you want manual int
 
 [MPZPLAYAdsRewardedVideoCustomEvent.m](./PlayableMopubAd/MPZPLAYAdsRewardedVideoCustomEvent.m)
 
-## 4. Set ad unit for ZPLAY Ads on MoPub
+## 4. Set ad unit for ZPLAY Ads on [MoPub](https://app.mopub.com/apps)
 #### 4.1 Create new adunit for ZPLAY Ads
 - Choose your app, click *New ad unit* button
 
@@ -88,7 +90,7 @@ Note:Zplay Ads is integrated via CocoaPods in the sample. If you want manual int
 
 ![获取广告位](imgs/015.png)
 
-## 5. Add ZPLAY Ads as a new network on MoPub
+## 5. Add ZPLAY Ads as a new network on [MoPub](https://app.mopub.com/networks)
 #### 5.1 Open Networks page, click *New network* button
 ![add a network](imgs/016.png)
 
@@ -114,9 +116,9 @@ MPZPLAYAdsRewardedVideoCustomEvent
 	"AdUnitId": "BAE5DAAC-04A2-2591-D5B0-38FA846E45E7"
 }
 ```
-Note: If necessary, please view step 1.3 to know how to change iosDemoApp to the APPID you applied on ZPLAY Ads, and view step 1.6 to find the way to change iosDemoAdUnit to AdUnitId applied on ZPLAY Ads.
+Note: Please remenber change test APP ID "A650AB0D-7BFC-2A81-3066-D3170947C3DA" to the APP ID you applied on ZPLAY Ads, and change test Ad Unit ID "BAE5DAAC-04A2-2591-D5B0-38FA846E45E7" to the APP ID you applied on ZPLAY Ads.
 
-## 6. Turn on ZPLAY Ads network on MoPub
+## 6. Turn on ZPLAY Ads network on [MoPub](https://app.mopub.com/segments)
 #### 6.1  Open Segments page, and click Global Segment
 ![Global Segment](imgs/019.png)
 

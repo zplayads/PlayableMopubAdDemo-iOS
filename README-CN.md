@@ -14,19 +14,21 @@
 ---
 
 ## 1. 在可玩广告平台申请应用ID及广告位ID
-#### 1.1 进入“应用管理”页面，点击添加“添加应用”按钮
+#### 1.1 进入“[应用管理](https://sellers.zplayads.com/#/app/appList/)”页面，点击添加“添加应用”按钮
 ![“应用管理”页面](imgs/001.png)
 
-#### 1.2 填写相关信息，点击“添加”按钮，返回应用管理列表页 
+#### 1.2 填写相关信息，点击“保存”按钮，返回应用管理列表页 
 ![添加](imgs/002.png)
+
+![添加](imgs/002-2.png)
 
 #### 1.3 在应用管理列表页，获取应用的ID
 ![应用管理列表页](imgs/003.png)
 
-#### 1.4 点击应用右侧的“创建广告位”按钮或者进入“广告位管理页面”点击“添加广告位”按钮
+#### 1.4 点击应用右侧的“创建广告位”按钮或者进入“[广告位管理页面](https://sellers.zplayads.com/#/ad/placeList/)”点击“添加广告位”按钮
 ![创建广告位](imgs/004.png)
 
-#### 1.5填写相关信息，点击“添加”按钮，返回广告位管理列表页
+#### 1.5填写相关信息，点击“保存”按钮，返回广告位管理列表页
 ![添加](imgs/005.png)
 
 #### 1.6在广告位管理列表页，获取广告位的ID
@@ -34,10 +36,10 @@
 
 注：您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您申请的正式ID。
 
-|操作系统|广告形式|  App_ID  |  Ad_Unit_id|
-|--------|----|----------|------------|
-|iOS|激励视频|A650AB0D-7BFC-2A81-3066-D3170947C3DA|BAE5DAAC-04A2-2591-D5B0-38FA846E45E7|
-|iOS|插屏|A650AB0D-7BFC-2A81-3066-D3170947C3DA|0868EBC0-7768-40CA-4226-F9924221C8EB|
+| 操作系统 | 广告形式 | App_ID                               | Ad_Unit_id                           |
+| ---- | ---- | ------------------------------------ | ------------------------------------ |
+| iOS  | 激励视频 | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
+| iOS  | 插屏   | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
 
 ## 2. 添加MoPub SDK和ZPLAY Ads SDK，步骤如下：
 
@@ -46,7 +48,7 @@
 #### 2.1 在Podfile文件中添加依赖项
 ```
 pod “mopub-ios-sdk”
-pod “PlayableAds”, "~>2.0.6"
+pod “PlayableAds”
 ```
 ![依赖](imgs/007.png)
 
@@ -65,7 +67,7 @@ pod “PlayableAds”, "~>2.0.6"
 
 [MPZPLAYAdsRewardedVideoCustomEvent.m](./PlayableMopubAd/MPZPLAYAdsRewardedVideoCustomEvent.m)
 
-## 4. 在MoPub平台为可玩广告配置广告位
+## 4. 在[MoPub平台](https://app.mopub.com/apps)为可玩广告配置广告位
 #### 4.1 为可玩广告新建广告位
 - 进入应用，点击“New add unit”按钮
 
@@ -88,7 +90,7 @@ pod “PlayableAds”, "~>2.0.6"
 
 ![获取广告位](imgs/015.png)
 
-## 5. 在MoPub平台增加可玩广告为新的广告源
+## 5. 在[MoPub平台](https://app.mopub.com/networks)增加可玩广告为新的广告源
 #### 5.1 进入“Networks”页面，点击“New network”按钮
 ![add a network](imgs/016.png)
 
@@ -114,9 +116,9 @@ MPZPLAYAdsRewardedVideoCustomEvent
 	"AdUnitId": "BAE5DAAC-04A2-2591-D5B0-38FA846E45E7"
 }
 ```
-注意：将iOSDemoApp替换成您在可玩广告平台申请的APPID（步骤1.3），将iOSDemoAdUnit替换成您在可玩广告平台申请的AdUnitId（步骤1.6）。
+注意：将A650AB0D-7BFC-2A81-3066-D3170947C3DA替换成您在可玩广告平台申请的APPID（步骤1.3），将BAE5DAAC-04A2-2591-D5B0-38FA846E45E7替换成您在可玩广告平台申请的AdUnitId（步骤1.6）。
 
-## 6. 在MoPub平台打开可玩广告广告源
+## 6. 在[MoPub平台](https://app.mopub.com/segments)打开可玩广告广告源
 #### 6.1 进入“Segments”页面，点击“Global Segment”链接
 ![Global Segment](imgs/019.png)
 
