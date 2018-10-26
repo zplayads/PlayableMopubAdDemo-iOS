@@ -11,16 +11,18 @@
 9. Debugging
 10. Sample
 
----
+
 
 ## 1. Apply for app ID and ad unit ID on ZPLAY Ads platform
 #### 1.1 Click *ADD NEW APP* button in [Application Management](https://sellers.zplayads.com/#/app/appList/) page
 ![“应用管理”页面](imgs/024.png)
 
 #### 1.2 Fill in app information, and click *Save* button, then go back to Application Management
-![添加](imgs/025.png)
-
+a. If your APP is online, you can fill in download address to get APP information
 ![添加](imgs/025-2.png)
+
+b. If your APP is not online, you should fill in APP information manually
+![添加](imgs/025.png)
 
 #### 1.3 Obtain your app ID in Application Management page
 ![应用管理列表页](imgs/026.png)
