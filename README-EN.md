@@ -118,7 +118,7 @@ MPZPLAYAdsRewardedVideoCustomEvent
 	"AdUnitId": "BAE5DAAC-04A2-2591-D5B0-38FA846E45E7"
 }
 ```
-Note: Please remenber change test APP ID "A650AB0D-7BFC-2A81-3066-D3170947C3DA" to the APP ID you applied on ZPLAY Ads, and change test Ad Unit ID "BAE5DAAC-04A2-2591-D5B0-38FA846E45E7" to the APP ID you applied on ZPLAY Ads.
+Note: Please remember change test APP ID "A650AB0D-7BFC-2A81-3066-D3170947C3DA" to the APP ID you applied on ZPLAY Ads, and change test Ad Unit ID "BAE5DAAC-04A2-2591-D5B0-38FA846E45E7" to the APP ID you applied on ZPLAY Ads.
 
 ## 6. Turn on ZPLAY Ads network on [MoPub](https://app.mopub.com/segments)
 #### 6.1  Open Segments page, and click Global Segment
