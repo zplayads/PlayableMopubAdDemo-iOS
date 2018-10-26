@@ -17,8 +17,10 @@
 #### 1.1 Click *ADD NEW APP* button in Application Management page
 ![“应用管理”页面](imgs/024.png)
 
-#### 1.2 Fill in app information, and click *ADD* button, then go back to Application Management
+#### 1.2 Fill in app information, and click *Save* button, then go back to Application Management
 ![添加](imgs/025.png)
+
+![添加](imgs/025-2.png)
 
 #### 1.3 Obtain your app ID in Application Management page
 ![应用管理列表页](imgs/026.png)
@@ -26,7 +28,7 @@
 #### 1.4 Click *Add New AdUnit* button in app list, or you are also available to do this in AdUnit Management page
 ![创建广告位](imgs/027.png)
 
-#### 1.5 Fill in adunit information, and click *ADD* button, then go back to AdUnit Management
+#### 1.5 Fill in adunit information, and click *Save* button, then go back to AdUnit Management
 ![添加](imgs/028.png)
 
 #### 1.6 Obtain your adunit ID in AdUnit Management page
@@ -114,7 +116,7 @@ MPZPLAYAdsRewardedVideoCustomEvent
 	"AdUnitId": "BAE5DAAC-04A2-2591-D5B0-38FA846E45E7"
 }
 ```
-Note: If necessary, please view step 1.3 to know how to change iosDemoApp to the APPID you applied on ZPLAY Ads, and view step 1.6 to find the way to change iosDemoAdUnit to AdUnitId applied on ZPLAY Ads.
+Note: If necessary, please view step 1.3 to know how to change A650AB0D-7BFC-2A81-3066-D3170947C3DA to the APPID you applied on ZPLAY Ads, and view step 1.6 to find the way to change BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 to AdUnitId applied on ZPLAY Ads.
 
 ## 6. Turn on ZPLAY Ads network on MoPub
 #### 6.1  Open Segments page, and click Global Segment
