@@ -25,7 +25,7 @@
 #### 1.3 Obtain your app ID in Application Management page
 ![应用管理列表页](imgs/026.png)
 
-#### 1.4 Click *Add New AdUnit* button in app list, or you are also available to do this in AdUnit Management page
+#### 1.4 Click *ADD NEW ADUNIT* button in app list, or you are also available to do this in AdUnit Management page
 ![创建广告位](imgs/027.png)
 
 #### 1.5 Fill in adunit information, and click *Save* button, then go back to AdUnit Management
