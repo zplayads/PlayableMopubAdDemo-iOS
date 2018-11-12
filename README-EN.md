@@ -79,7 +79,7 @@ pod “PlayableAds”
 
 ![Dependencies](imgs/007.png)
 
-### 2.2 Execute pod install in Terminal
+### 2.2 Execute ```pod install --repo-update``` in Terminal
 
 ![Dependencies](imgs/008.png)
 
@@ -189,4 +189,4 @@ Here are the configurations:
 
 View [Demo](https://github.com/zplayads/PlayableMopubAdDemo-iOS)
 
-> Note: Please execute pod install in the root of project in Terminal before operating demo.
+> Note: Please execute ```pod install --repo-update``` in the root of project in Terminal before operating demo.

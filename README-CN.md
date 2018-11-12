@@ -78,7 +78,7 @@ pod “PlayableAds”
 
 ![依赖](imgs/007.png)
 
-### 2.2 在终端命令里面执行pod install
+### 2.2 在终端命令里面执行```pod install --repo-update```
 
 ![依赖](imgs/008.png)
 
@@ -188,4 +188,4 @@ MPZPLAYAdsRewardedVideoCustomEvent
 
 点击查看[Demo](https://github.com/zplayads/PlayableMopubAdDemo-iOS)
 
-> 注意：执行demo前，请在终端命令行进入工程根目录下执行pod install。
+> 注意：执行demo前，请在终端命令行进入工程根目录下执行```pod install --repo-update```。
