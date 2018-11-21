@@ -16,8 +16,28 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
+  desc "Submit a new Beta Build to HockeyApp"
+  lane :mopub do
+  	next if ENV["CI"]
+    # Build
+    gym(
+      scheme: "PlayableMopubAd",
+      workspace: "PlayableMopubAd.xcworkspace",
+      configuration: "Release",
+      clean: true,
+      include_symbols: true,
+      export_method: "enterprise"
+    )
+
+    # Push to HockeyApp
+    hockey(
+      api_token: "b23874100f5346cdb613ca63c57393eb",
+      public_identifier: '369fdb7db11d4fa6997b1d24203d5a7f',
+      notify: "1",
+      status: "2",
+      commit_sha: ENV["TRAVIS_COMMIT"],
+      notes: ENV["TRAVIS_COMMIT_MESSAGE"],
+      timeout: 300
+    )
   end
 end
