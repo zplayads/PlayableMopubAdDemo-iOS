@@ -97,7 +97,7 @@ Turn off Xcode after installation, and open .xcworkspace file in the root of pro
 
 [MPZPLAYAdsInterstitialCustomEvent.h](./PlayableMopubAd/MPZPLAYAdsInterstitialCustomEvent.h)
 
-[MPZPLAYAdsInterstitialCustomEvent.m](./PlayableMopubAd/MPZPLAYAdsInterstitialCustomEvent/m)
+[MPZPLAYAdsInterstitialCustomEvent.m](./PlayableMopubAd/MPZPLAYAdsInterstitialCustomEvent.m)
 
 ## 4. Set ad unit for ZPLAY Ads on [MoPub](https://app.mopub.com/apps)
 

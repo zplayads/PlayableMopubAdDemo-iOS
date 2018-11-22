@@ -96,7 +96,7 @@ pod “PlayableAds”
 
 [MPZPLAYAdsInterstitialCustomEvent.h](./PlayableMopubAd/MPZPLAYAdsInterstitialCustomEvent.h)
 
-[MPZPLAYAdsInterstitialCustomEvent.m](./PlayableMopubAd/MPZPLAYAdsInterstitialCustomEvent/m)
+[MPZPLAYAdsInterstitialCustomEvent.m](./PlayableMopubAd/MPZPLAYAdsInterstitialCustomEvent.m)
 
 ## 4. 在[MoPub平台](https://app.mopub.com/apps)为可玩广告配置广告位
 
