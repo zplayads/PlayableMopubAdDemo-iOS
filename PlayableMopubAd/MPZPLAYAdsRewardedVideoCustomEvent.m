@@ -11,7 +11,6 @@
 #import "MPLogging.h"
 #import "MPRewardedVideoError.h"
 #import "MPRewardedVideoReward.h"
-#import "MPRewardedVideoCustomEvent+Caching.h"
 
 @import PlayableAds;
 
@@ -24,9 +23,6 @@
 @end
 
 @implementation MPZPLAYAdsRewardedVideoCustomEvent
-
-- (void)initializeSdkWithParameters:(NSDictionary *)parameters {
-}
 
 - (void)requestRewardedVideoWithCustomEventInfo:(NSDictionary *)info {
     self.appId =  [info objectForKey:@"APPID"];
