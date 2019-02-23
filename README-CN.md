@@ -26,6 +26,7 @@
 - [7. 确认可玩广告配置成功](#7-%E7%A1%AE%E8%AE%A4%E5%8F%AF%E7%8E%A9%E5%B9%BF%E5%91%8A%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F)
 - [8. 在工程中使用MoPub请求可玩广告](#8-%E5%9C%A8%E5%B7%A5%E7%A8%8B%E4%B8%AD%E4%BD%BF%E7%94%A8mopub%E8%AF%B7%E6%B1%82%E5%8F%AF%E7%8E%A9%E5%B9%BF%E5%91%8A)
 - [9. 示例](#9-%E7%A4%BA%E4%BE%8B)
+- [10. 测试](#10-测试)
 
 ## 1. 在可玩广告平台申请应用ID及广告位ID
 
@@ -193,3 +194,12 @@ MPZPLAYAdsRewardedVideoCustomEvent
 点击查看[Demo](https://github.com/zplayads/PlayableMopubAdDemo-iOS)
 
 > 注意：执行demo前，请在终端命令行进入工程根目录下执行```pod install --repo-update```。
+
+## 10. 测试
+
+您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您申请的正式ID。
+
+| 操作系统 | 广告形式 | App_ID                               | Ad_Unit_id                           |
+| ---- | ---- | ------------------------------------ | ------------------------------------ |
+| iOS  | 激励视频 | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
+| iOS  | 插屏   | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
