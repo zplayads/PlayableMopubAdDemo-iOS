@@ -26,6 +26,7 @@
 - [7. Confirm the configuration of ZPLAY Ads](#7-confirm-the-configuration-of-zplay-ads)
 - [8. Use MoPub to request ZPLAY Ads in project](#8-use-mopub-to-request-zplay-ads-in-project)
 - [9. Sample](#9-sample)
+- [10. Test](##10.-Test)
 
 ## 1. Apply for APP ID and Ad Unit ID on ZPLAY Ads platform
 
@@ -194,3 +195,12 @@ Here are the configurations:
 View [Demo](https://github.com/zplayads/PlayableMopubAdDemo-iOS)
 
 > Note: Please execute ```pod install --repo-update``` in the root of project in Terminal before operating demo.
+
+## 10. Test
+
+You are available to use the following ID when testing(not charge). Please switch to the ID you applied in production mode.
+
+| OS   | Ad Type      | App_ID                               | Ad_Unit_id                           |
+| ---- | ------------ | ------------------------------------ | ------------------------------------ |
+| iOS  | Reward Video | A650AB0D-7BFC-2A81-3066-D3170947C3DA | BAE5DAAC-04A2-2591-D5B0-38FA846E45E7 |
+| iOS  | Interstitial | A650AB0D-7BFC-2A81-3066-D3170947C3DA | 0868EBC0-7768-40CA-4226-F9924221C8EB |
