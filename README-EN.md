@@ -26,7 +26,7 @@
 - [7. Confirm the configuration of ZPLAY Ads](#7-confirm-the-configuration-of-zplay-ads)
 - [8. Use MoPub to request ZPLAY Ads in project](#8-use-mopub-to-request-zplay-ads-in-project)
 - [9. Sample](#9-sample)
-- [10. Test](##10-Test)
+- [10. Test](#10-Test)
 
 ## 1. Apply for APP ID and Ad Unit ID on ZPLAY Ads platform
 
