@@ -298,7 +298,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PlayableMopubAd/Pods-PlayableMopubAd-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PlayableMopubAd/Pods-PlayableMopubAd-resources.sh",
 				"${PODS_ROOT}/PlayableAds/Resources/ZplayMuteListener.bundle",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn.png",
@@ -351,7 +351,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayableMopubAd/Pods-PlayableMopubAd-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayableMopubAd/Pods-PlayableMopubAd-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -544,7 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.PlayableMopubAd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a0f49df3-171d-4535-b30a-dd800ef8f012";
-				PROVISIONING_PROFILE_SPECIFIER = "Dis-zplay*";
+				PROVISIONING_PROFILE_SPECIFIER = Dis;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
