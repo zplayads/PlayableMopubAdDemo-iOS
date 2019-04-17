@@ -521,6 +521,7 @@
 				CURRENT_PROJECT_VERSION = 20191107;
 				DEVELOPMENT_TEAM = VG25A6M88T;
 				INFOPLIST_FILE = PlayableMopubAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.PlayableMopubAd;
@@ -541,6 +542,7 @@
 				CURRENT_PROJECT_VERSION = 20191107;
 				DEVELOPMENT_TEAM = L5UE3EGW93;
 				INFOPLIST_FILE = PlayableMopubAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.PlayableMopubAd;
