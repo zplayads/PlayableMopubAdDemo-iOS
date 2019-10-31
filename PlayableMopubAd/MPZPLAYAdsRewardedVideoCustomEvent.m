@@ -17,19 +17,22 @@
 @interface MPZPLAYAdsRewardedVideoCustomEvent ()<PlayableAdsDelegate>
 
 @property (nonatomic) PlayableAds *pAds;
-@property NSString *appId;
-@property NSString *adUnitId;
 
 @end
 
 @implementation MPZPLAYAdsRewardedVideoCustomEvent
 
 - (void)requestRewardedVideoWithCustomEventInfo:(NSDictionary *)info {
-    self.appId =  [info objectForKey:@"APPID"];
-    self.adUnitId = [info objectForKey:@"AdUnitId"];
-    self.pAds = [[PlayableAds alloc] initWithAdUnitID:self.adUnitId appID:self.appId];
+    NSString *appId =  [info objectForKey:@"APPID"];
+    appId = [appId stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSString *adUnitId = [info objectForKey:@"AdUnitId"];
+    adUnitId = [adUnitId stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    
+    self.pAds = [[PlayableAds alloc] initWithAdUnitID:adUnitId appID:appId];
     self.pAds.autoLoad = NO;
     self.pAds.delegate = self;
+    self.pAds.channelId = [info objectForKey:@"ChannelID"];
+    
     [self.pAds loadAd];
 }
 
