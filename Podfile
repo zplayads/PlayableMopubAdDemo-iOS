@@ -9,7 +9,7 @@ target 'PlayableMopubAd' do
 
   # Pods for PlayableMopubAd
   pod 'PlayableAds',"2.6.0"
-  pod 'mopub-ios-sdk'
+  pod 'mopub-ios-sdk',"5.6.0"
 
   target 'PlayableMopubAdTests' do
     inherit! :search_paths
