@@ -9,6 +9,8 @@
 #import "MoPub.h"
 #import "MPRewardedVideo.h"
 
+static NSString *videoPlacementID = @"e799f7867d614fdd99a7917833e91643";
+
 @interface RewardedVideoViewController () <MPRewardedVideoDelegate>
 
 @property (nonatomic) MPRewardedVideo *mpRewardedVideo;
@@ -33,14 +35,14 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     _mLog.text = @"";
     [self addLog:@"requestAd..."];
-    [MPRewardedVideo setDelegate:self forAdUnitId:@"be532d84e020492dba00e91e4deeade3"];
-    [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:@"be532d84e020492dba00e91e4deeade3"
+    [MPRewardedVideo setDelegate:self forAdUnitId:videoPlacementID];
+    [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:videoPlacementID
                                withMediationSettings:nil];
     
 }
 
 - (IBAction)presentAd:(UIButton *)sender {
-    [MPRewardedVideo presentRewardedVideoAdForAdUnitID:@"be532d84e020492dba00e91e4deeade3"
+    [MPRewardedVideo presentRewardedVideoAdForAdUnitID:videoPlacementID
                                     fromViewController:self withReward:nil];
 }
 
