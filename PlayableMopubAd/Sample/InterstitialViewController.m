@@ -58,8 +58,9 @@
     [self addLog:@"interstitialDidLoadAd"];
 }
 
-- (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial {
-    [self addLog:@"interstitialDidFailToLoadAd"];
+- (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial withError:(NSError *)error{
+     NSString *errorMsg = [NSString stringWithFormat:@"interstitialDidFailToLoadAd === %@",error];
+    [self addLog:errorMsg];
 }
 
 - (void)interstitialWillAppear:(MPInterstitialAdController *)interstitial {

@@ -55,12 +55,13 @@
 - (UIViewController *)viewControllerForPresentingModalView {
     return self;
 }
-- (void)adViewDidLoadAd:(MPAdView *)view {
+- (void)adViewDidLoadAd:(MPAdView *)view adSize:(CGSize)adSize {
     [self addLog:@"adViewDidLoadAd"];
 }
 
-- (void)adViewDidFailToLoadAd:(MPAdView *)view {
-     [self addLog:@"adViewDidFailToLoadAd"];
+- (void)adView:(MPAdView *)view didFailToLoadAdWithError:(NSError *)error {
+    NSString *errorMsg = [NSString stringWithFormat:@"adViewDidFailToLoadAd === %@",error];
+    [self addLog:errorMsg];
 }
 /** @name Detecting When a User Interacts With the Ad View */
 - (void)willPresentModalViewForAd:(MPAdView *)view{
