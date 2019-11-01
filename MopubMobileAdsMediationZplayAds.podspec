@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description = "ZplayAds SDK provides a better ad format for monetizing."
   s.source = {:http => 'https://github.com/zplayads/PlayableMopubAdDemo-iOS', :tag => s.version.to_s}
   s.source_files = 'PlayableMopubAd/Adapters/*.{h,m}'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.dependency 'PlayableAds', '~> 2.6.0'
   s.dependency 'mopub-ios-sdk'
 end
