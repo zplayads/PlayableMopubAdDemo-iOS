@@ -1,20 +1,22 @@
 PODS:
-  - mopub-ios-sdk (5.6.0):
-    - mopub-ios-sdk/MoPubSDK (= 5.6.0)
-  - mopub-ios-sdk/Avid (5.6.0):
+  - mopub-ios-sdk (5.10.0):
+    - mopub-ios-sdk/MoPubSDK (= 5.10.0)
+  - mopub-ios-sdk/Avid (5.10.0):
     - mopub-ios-sdk/Core
-  - mopub-ios-sdk/Core (5.6.0)
-  - mopub-ios-sdk/Moat (5.6.0):
+  - mopub-ios-sdk/Core (5.10.0)
+  - mopub-ios-sdk/Moat (5.10.0):
     - mopub-ios-sdk/Core
-  - mopub-ios-sdk/MoPubSDK (5.6.0):
+  - mopub-ios-sdk/MoPubSDK (5.10.0):
     - mopub-ios-sdk/Avid
     - mopub-ios-sdk/Core
     - mopub-ios-sdk/Moat
+  - MopubMobileAdsMediationZplayAds (2.6.0):
+    - mopub-ios-sdk
+    - PlayableAds (~> 2.6.0)
   - PlayableAds (2.6.0)
 
 DEPENDENCIES:
-  - mopub-ios-sdk (= 5.6.0)
-  - PlayableAds (= 2.6.0)
+  - MopubMobileAdsMediationZplayAds (from `MopubMobileAdsMediationZplayAds.podspec`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -22,10 +24,15 @@ SPEC REPOS:
   https://github.com/yumimobi/Specs.git:
     - PlayableAds
 
+EXTERNAL SOURCES:
+  MopubMobileAdsMediationZplayAds:
+    :path: MopubMobileAdsMediationZplayAds.podspec
+
 SPEC CHECKSUMS:
-  mopub-ios-sdk: 2b13b29ed6d1b06f7e52dd0c0a01e7adb749c1a7
+  mopub-ios-sdk: 3d65133b95b6498aa871a66818a11a5ba307e565
+  MopubMobileAdsMediationZplayAds: b582f0dc222ca8f8d30d3ee5bcdcce49c7f18229
   PlayableAds: d929e4d90b898b3d15f5e942f2e05cd6b121fa5b
 
-PODFILE CHECKSUM: 2bcdf2daa16221688623485fa3015ab45dbf0717
+PODFILE CHECKSUM: 2ef222eea6d89f96944717fa7f31f61fd320843d
 
 COCOAPODS: 1.7.5
