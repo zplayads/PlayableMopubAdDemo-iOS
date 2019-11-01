@@ -17,7 +17,7 @@
 
 @implementation MPZPLAYAdsInterstitialCustomEvent
 
--(void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info {
+-(void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info adMarkup:(NSString *)adMarkup{
   
     NSString *appId =  [info objectForKey:@"APPID"];
     appId = [appId stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];

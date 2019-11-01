@@ -22,7 +22,7 @@
 
 @implementation MPZPLAYAdsRewardedVideoCustomEvent
 
-- (void)requestRewardedVideoWithCustomEventInfo:(NSDictionary *)info {
+- (void)requestRewardedVideoWithCustomEventInfo:(NSDictionary *)info adMarkup:(NSString *)adMarkup {
     NSString *appId =  [info objectForKey:@"APPID"];
     appId = [appId stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     NSString *adUnitId = [info objectForKey:@"AdUnitId"];
