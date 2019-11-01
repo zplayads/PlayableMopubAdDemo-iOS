@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		637B4B420D1B1852BD36D618 /* libPods-PlayableMopubAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE059D8A73426D9CCFBF57BF /* libPods-PlayableMopubAd.a */; };
 		68ED57B7E223C19AB0246337 /* libPods-PlayableMopubAdTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6F4B383B5BECB2A914FE1C /* libPods-PlayableMopubAdTests.a */; };
-		6D9D5A6E236AD62800B49C7B /* MPZPLAYAdsInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5A69236AD62800B49C7B /* MPZPLAYAdsInterstitialCustomEvent.m */; };
-		6D9D5A6F236AD62800B49C7B /* MPZPLAYAdsBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5A6B236AD62800B49C7B /* MPZPLAYAdsBannerCustomEvent.m */; };
-		6D9D5A70236AD62800B49C7B /* MPZPLAYAdsRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5A6C236AD62800B49C7B /* MPZPLAYAdsRewardedVideoCustomEvent.m */; };
 		6D9D5A7A236AD68100B49C7B /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5A74236AD68000B49C7B /* BannerViewController.m */; };
 		6D9D5A7B236AD68100B49C7B /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5A77236AD68100B49C7B /* InterstitialViewController.m */; };
 		6D9D5A7C236AD68100B49C7B /* RewardedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5A78236AD68100B49C7B /* RewardedVideoViewController.m */; };
@@ -37,12 +34,6 @@
 /* Begin PBXFileReference section */
 		069EA153EE893340EB0E8E42 /* Pods-PlayableMopubAd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableMopubAd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableMopubAd/Pods-PlayableMopubAd.debug.xcconfig"; sourceTree = "<group>"; };
 		2736500C1CE67F3A721F3392 /* Pods-PlayableMopubAd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayableMopubAd.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayableMopubAd/Pods-PlayableMopubAd.release.xcconfig"; sourceTree = "<group>"; };
-		6D9D5A68236AD62800B49C7B /* MPZPLAYAdsBannerCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPZPLAYAdsBannerCustomEvent.h; sourceTree = "<group>"; };
-		6D9D5A69236AD62800B49C7B /* MPZPLAYAdsInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPZPLAYAdsInterstitialCustomEvent.m; sourceTree = "<group>"; };
-		6D9D5A6A236AD62800B49C7B /* MPZPLAYAdsRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPZPLAYAdsRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
-		6D9D5A6B236AD62800B49C7B /* MPZPLAYAdsBannerCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPZPLAYAdsBannerCustomEvent.m; sourceTree = "<group>"; };
-		6D9D5A6C236AD62800B49C7B /* MPZPLAYAdsRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPZPLAYAdsRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
-		6D9D5A6D236AD62800B49C7B /* MPZPLAYAdsInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPZPLAYAdsInterstitialCustomEvent.h; sourceTree = "<group>"; };
 		6D9D5A72236AD68000B49C7B /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		6D9D5A73236AD68000B49C7B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		6D9D5A74236AD68000B49C7B /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
@@ -88,19 +79,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D9D5A5E236AD61700B49C7B /* Adapters */ = {
-			isa = PBXGroup;
-			children = (
-				6D9D5A68236AD62800B49C7B /* MPZPLAYAdsBannerCustomEvent.h */,
-				6D9D5A6B236AD62800B49C7B /* MPZPLAYAdsBannerCustomEvent.m */,
-				6D9D5A6D236AD62800B49C7B /* MPZPLAYAdsInterstitialCustomEvent.h */,
-				6D9D5A69236AD62800B49C7B /* MPZPLAYAdsInterstitialCustomEvent.m */,
-				6D9D5A6A236AD62800B49C7B /* MPZPLAYAdsRewardedVideoCustomEvent.h */,
-				6D9D5A6C236AD62800B49C7B /* MPZPLAYAdsRewardedVideoCustomEvent.m */,
-			);
-			path = Adapters;
-			sourceTree = "<group>";
-		};
 		6D9D5A71236AD65000B49C7B /* Sample */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				6D9D5A71236AD65000B49C7B /* Sample */,
-				6D9D5A5E236AD61700B49C7B /* Adapters */,
 				C76A6E811FAB1FEF00025305 /* AppDelegate.h */,
 				C76A6E821FAB1FEF00025305 /* AppDelegate.m */,
 				C76A6E871FAB1FEF00025305 /* Main.storyboard */,
@@ -326,14 +303,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PlayableMopubAd/Pods-PlayableMopubAd-resources.sh",
 				"${PODS_ROOT}/PlayableAds/Resources/ZplayMuteListener.bundle",
-				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@2x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@3x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@2x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@3x.png",
-				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCountdownTimer.html",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@2x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@3x.png",
@@ -352,14 +327,12 @@
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZplayMuteListener.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPAdBrowserController.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCountdownTimer.html",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@3x.png",
@@ -387,15 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9D5A6F236AD62800B49C7B /* MPZPLAYAdsBannerCustomEvent.m in Sources */,
 				C76A6E911FAB1FEF00025305 /* main.m in Sources */,
 				6D9D5A7A236AD68100B49C7B /* BannerViewController.m in Sources */,
-				6D9D5A70236AD62800B49C7B /* MPZPLAYAdsRewardedVideoCustomEvent.m in Sources */,
 				6D9D5A7D236AD68100B49C7B /* MainViewController.m in Sources */,
 				6D9D5A7C236AD68100B49C7B /* RewardedVideoViewController.m in Sources */,
 				6D9D5A7B236AD68100B49C7B /* InterstitialViewController.m in Sources */,
 				C76A6E831FAB1FEF00025305 /* AppDelegate.m in Sources */,
-				6D9D5A6E236AD62800B49C7B /* MPZPLAYAdsInterstitialCustomEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
