@@ -17,7 +17,7 @@
 
 @implementation MPZPLAYAdsBannerCustomEvent
 
-- (void)requestAdWithSize:(CGSize)size customEventInfo:(NSDictionary *)info {
+- (void)requestAdWithSize:(CGSize)size customEventInfo:(NSDictionary *)info adMarkup:(NSString *)adMarkup{
     NSString *appId =  [info objectForKey:@"APPID"];
     appId = [appId stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     NSString *adUnitId = [info objectForKey:@"AdUnitId"];
