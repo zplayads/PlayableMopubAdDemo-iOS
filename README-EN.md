@@ -9,7 +9,7 @@
   - [1.4 Click *ADD NEW ADUNIT* button in app list, or you are also available to do this in AdUnit Management page](#14-click-add-new-adunit-button-in-app-list-or-you-are-also-available-to-do-this-in-adunit-management-page)
   - [1.5 Fill in adunit information, and click *Save* button, then go back to AdUnit Management](#15-fill-in-adunit-information-and-click-save-button-then-go-back-to-adunit-management)
   - [1.6 Obtain your adunit ID in AdUnit Management page](#16-obtain-your-adunit-id-in-adunit-management-page)
-- [2. Add MoPub SDK and ZPLAY Ads SDK as below](#2-add-mopub-sdk-and-zplay-ads-sdk-as-below)
+- [2. Add MoPub-AtmosplayAds-Adapters SDK as below](#2-Add-MoPub-AtmosplayAds-Adapters-SDK-as-below)
   - [2.1 Add dependencies in Podfile file](#21-add-dependencies-in-podfile-file)
   - [2.2 Run the following command in Terminal](#22-Run-the-following-command-in-Terminal)
 - [3. Set ad unit for ZPLAY Ads on MoPub](#4-set-ad-unit-for-zplay-ads-on-mopub)
@@ -61,25 +61,21 @@ b. If your APP is not online, you should fill in APP information manually
 
 > Note: You are available to use the following ID when testing(not charge). Please switch to the ID you applied in production mode.
 
-## 2. Add MopubMobileAdsMediationZplayAds SDK as below
+## 2. Add MoPub-AtmosplayAds-Adapters SDK as below
 
 How to use [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
 ### 2.1 Add dependencies in Podfile file
 
 ```ruby
-pod 'MopubMobileAdsMediationZplayAds'
+pod 'MoPub-AtmosplayAds-Adapters'
 ```
-
-![Dependencies](imgs/007.png)
-
 ### 2.2 Run the following command in Terminal
 
 ```ruby
 $ pod repo update
 $ pod install
 ```
-![Dependencies](imgs/008.png)
 
 Turn off Xcode after installation, and open .xcworkspace file in the root of project:
 
