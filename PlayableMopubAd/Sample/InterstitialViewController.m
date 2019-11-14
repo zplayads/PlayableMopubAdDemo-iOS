@@ -23,7 +23,7 @@
 - (void)loadInterstitial {
     // Instantiate the interstitial using the class convenience method.
     self.interstitial = [MPInterstitialAdController
-                         interstitialAdControllerForAdUnitId:@"d5c5566b8e144a3cae4cedd45f299696"];
+                         interstitialAdControllerForAdUnitId:@"5d50f8affae04961a88834e5fe9c6dc6"];
     self.interstitial.delegate = self;
     
     // Fetch the interstitial ad.
@@ -58,8 +58,9 @@
     [self addLog:@"interstitialDidLoadAd"];
 }
 
-- (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial {
-    [self addLog:@"interstitialDidFailToLoadAd"];
+- (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial withError:(NSError *)error{
+     NSString *errorMsg = [NSString stringWithFormat:@"interstitialDidFailToLoadAd === %@",error];
+    [self addLog:errorMsg];
 }
 
 - (void)interstitialWillAppear:(MPInterstitialAdController *)interstitial {
