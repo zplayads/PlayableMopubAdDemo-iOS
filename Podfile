@@ -7,7 +7,7 @@ target 'PlayableMopubAd' do
   # use_frameworks!
 
   # Pods for PlayableMopubAd
-  pod 'MopubMobileAdsMediationZplayAds', :path => 'MopubMobileAdsMediationZplayAds.podspec'
+  pod 'MopubMobileAdsMediationZplayAds'
 
   target 'PlayableMopubAdTests' do
     inherit! :search_paths
