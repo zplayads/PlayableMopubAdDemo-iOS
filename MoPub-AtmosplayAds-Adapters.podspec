@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = "MopubMobileAdsMediationZplayAds"
+  s.name = "MoPub-AtmosplayAds-Adapters"
   s.version = "2.6.0"
   s.summary = "ZplayAds adapter used for mediation with the Mopub Mobile Ads SDK"
   s.license = "Custom"
