@@ -9,7 +9,7 @@
   - [1.4 点击应用右侧的“创建广告位”按钮或者进入“广告位管理页面”点击“添加广告位”按钮](#14-%E7%82%B9%E5%87%BB%E5%BA%94%E7%94%A8%E5%8F%B3%E4%BE%A7%E7%9A%84%E5%88%9B%E5%BB%BA%E5%B9%BF%E5%91%8A%E4%BD%8D%E6%8C%89%E9%92%AE%E6%88%96%E8%80%85%E8%BF%9B%E5%85%A5%E5%B9%BF%E5%91%8A%E4%BD%8D%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2%E7%82%B9%E5%87%BB%E6%B7%BB%E5%8A%A0%E5%B9%BF%E5%91%8A%E4%BD%8D%E6%8C%89%E9%92%AE)
   - [1.5填写相关信息，点击“保存”按钮，返回广告位管理列表页](#15%E5%A1%AB%E5%86%99%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF%E7%82%B9%E5%87%BB%E4%BF%9D%E5%AD%98%E6%8C%89%E9%92%AE%E8%BF%94%E5%9B%9E%E5%B9%BF%E5%91%8A%E4%BD%8D%E7%AE%A1%E7%90%86%E5%88%97%E8%A1%A8%E9%A1%B5)
   - [1.6在广告位管理列表页，获取广告位的ID](#16%E5%9C%A8%E5%B9%BF%E5%91%8A%E4%BD%8D%E7%AE%A1%E7%90%86%E5%88%97%E8%A1%A8%E9%A1%B5%E8%8E%B7%E5%8F%96%E5%B9%BF%E5%91%8A%E4%BD%8D%E7%9A%84id)
-- [2. 添加 MopubMobileAdsMediationZplayAds SDK，步骤如下：](#2-添加-MopubMobileAdsMediationZplayAds-SDK，步骤如下：)
+- [2. 添加 MoPub-AtmosplayAds-Adapters SDK，步骤如下：](#2-添加-MoPub-AtmosplayAds-Adapters-SDK，步骤如下：)
   - [2.1 在 Podfile 文件中添加依赖项](#21-在-Podfile-文件中添加依赖项)
   - [2.2 在终端运行以下命令](#22-在终端运行以下命令)
 - [3. 在MoPub平台为可玩广告配置广告位](#3-%E5%9C%A8mopub%E5%B9%B3%E5%8F%B0%E4%B8%BA%E5%8F%AF%E7%8E%A9%E5%B9%BF%E5%91%8A%E9%85%8D%E7%BD%AE%E5%B9%BF%E5%91%8A%E4%BD%8D)
@@ -60,22 +60,20 @@ b. 若您的应用未上线，您需手动填写应用信息
 
 > 注：您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您申请的正式ID。
 
-## 2. 添加 MopubMobileAdsMediationZplayAds SDK，步骤如下：
+## 2. 添加 MoPub-AtmosplayAds-Adapters SDK，步骤如下：
 
 了解如何使用[Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
 ### 2.1 在 Podfile 文件中添加依赖项
 
 ```ruby
-pod 'MopubMobileAdsMediationZplayAds'
+pod 'MoPub-AtmosplayAds-Adapters'
 ```
 ### 2.2 在终端运行以下命令
 ```ruby
 $ pod repo update
 $ pod install
 ```
-
-![依赖](imgs/008.png)
 
 在安装完成后，关闭Xcode，在工程根目录下打开.xcworkspace文件：
 
