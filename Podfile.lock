@@ -1,4 +1,7 @@
 PODS:
+  - MoPub-AtmosplayAds-Adapters (2.6.0):
+    - mopub-ios-sdk
+    - PlayableAds (~> 2.6.0)
   - mopub-ios-sdk (5.10.0):
     - mopub-ios-sdk/MoPubSDK (= 5.10.0)
   - mopub-ios-sdk/Avid (5.10.0):
@@ -10,25 +13,22 @@ PODS:
     - mopub-ios-sdk/Avid
     - mopub-ios-sdk/Core
     - mopub-ios-sdk/Moat
-  - MopubMobileAdsMediationZplayAds (2.6.0):
-    - mopub-ios-sdk
-    - PlayableAds (~> 2.6.0)
   - PlayableAds (2.6.0)
 
 DEPENDENCIES:
-  - MopubMobileAdsMediationZplayAds
+  - MoPub-AtmosplayAds-Adapters
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - MoPub-AtmosplayAds-Adapters
     - mopub-ios-sdk
-    - MopubMobileAdsMediationZplayAds
     - PlayableAds
 
 SPEC CHECKSUMS:
+  MoPub-AtmosplayAds-Adapters: acc942ec68b4cdb72d6ce962fcbfd98029a05a4d
   mopub-ios-sdk: 3d65133b95b6498aa871a66818a11a5ba307e565
-  MopubMobileAdsMediationZplayAds: 379ecb49250aeddfe4b3db8b3bab715269cc4384
   PlayableAds: 4c9e4d1e705270a7d7a44c75dd45ba4ed3395ed3
 
-PODFILE CHECKSUM: 1618a57da5120400218233ef11d26b54861af641
+PODFILE CHECKSUM: 189d5b4d8a8b2e777a69420b2e8f66e3a33a7795
 
 COCOAPODS: 1.7.5

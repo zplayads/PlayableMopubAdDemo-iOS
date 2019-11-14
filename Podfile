@@ -7,7 +7,7 @@ target 'PlayableMopubAd' do
   # use_frameworks!
 
   # Pods for PlayableMopubAd
-  pod 'MopubMobileAdsMediationZplayAds'
+  pod 'MoPub-AtmosplayAds-Adapters'
 
   target 'PlayableMopubAdTests' do
     inherit! :search_paths
